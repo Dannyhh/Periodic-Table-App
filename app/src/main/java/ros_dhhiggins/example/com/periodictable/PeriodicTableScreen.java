@@ -1,19 +1,13 @@
 package ros_dhhiggins.example.com.periodictable;
 
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity {
+public class PeriodicTableScreen extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-    }
-
-    public void launchPeriodicTable(){
-        Intent launch = new Intent(this, PeriodicTableScreen.class);
-
+        setContentView(R.layout.activity_periodic_table_screen);
     }
 }

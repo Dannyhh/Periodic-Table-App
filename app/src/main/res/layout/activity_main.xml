@@ -11,7 +11,17 @@
     tools:context="ros_dhhiggins.example.com.periodictable.MainActivity">
 
     <TextView
+        android:id="@+id/welcomeMessage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_centerHorizontal="true"
+        android:text="@string/home"
+        android:textSize="50sp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/welcomeMessage"
+        android:hint="@string/periodicTableButton"
+        android:onClick="launchPeriodicTable"
+        />
 </RelativeLayout>
