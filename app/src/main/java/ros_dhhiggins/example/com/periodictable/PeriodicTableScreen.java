@@ -1,7 +1,17 @@
 package ros_dhhiggins.example.com.periodictable;
 
+import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.GridLayout;
+import android.widget.GridView;
+import android.widget.ImageButton;
+import android.widget.RelativeLayout;
+
+import static java.security.AccessController.getContext;
 
 public class PeriodicTableScreen extends AppCompatActivity {
 
@@ -9,5 +19,14 @@ public class PeriodicTableScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_periodic_table_screen);
+        GridLayout grid = (GridLayout) findViewById(R.id.layoutGrid);
+        createButtons(grid);
+    }
+
+    public void createButtons(GridLayout grid){
+        grid.setColumnCount(18);
+        grid.setRowCount(10);
+
+
     }
 }
