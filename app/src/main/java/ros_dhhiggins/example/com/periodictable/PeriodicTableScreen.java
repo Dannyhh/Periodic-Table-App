@@ -20,13 +20,8 @@ public class PeriodicTableScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_periodic_table_screen);
         GridLayout grid = (GridLayout) findViewById(R.id.layoutGrid);
-        createButtons(grid);
-    }
-
-    public void createButtons(GridLayout grid){
-        grid.setColumnCount(18);
-        grid.setRowCount(10);
-
+        createButtons newButtons = new createButtons();
+        newButtons.build(grid);
 
     }
 }
