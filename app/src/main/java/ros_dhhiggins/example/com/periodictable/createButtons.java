@@ -45,7 +45,6 @@ public class createButtons{
 
         }
                     private static int getImage(Context context, String name) {
-                        int resID = context.getResources().getIdentifier(name, "drawable", context.getPackageName());
-                        return resID;
+                        return context.getResources().getIdentifier(name, "drawable", context.getPackageName());
     }
 }
