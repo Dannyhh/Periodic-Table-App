@@ -20,7 +20,7 @@ public class PeriodicTableScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_periodic_table_screen);
         GridLayout grid = (GridLayout) findViewById(R.id.layoutGrid);
-        createButtons newButtons = new createButtons();
+        createButtons newButtons = new createButtons(this);
         newButtons.build(grid);
 
     }

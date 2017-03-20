@@ -12,7 +12,8 @@ import java.lang.reflect.Array;
 import static android.R.attr.type;
 
 /**
- * Created by ros_dhhiggins on 3/16/2017.
+ * Created by Danny Higgins on 3/16/2017.
+ * This class creates all of the buttons used in the gridLayout for the periodic table
  */
 
 public class createButtons{
