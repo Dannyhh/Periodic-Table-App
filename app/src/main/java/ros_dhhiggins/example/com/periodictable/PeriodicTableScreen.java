@@ -9,6 +9,7 @@ import android.widget.EditText;
 import android.widget.GridLayout;
 import android.widget.GridView;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
 import static java.security.AccessController.getContext;
@@ -21,7 +22,11 @@ public class PeriodicTableScreen extends AppCompatActivity {
         setContentView(R.layout.activity_periodic_table_screen);
         GridLayout grid = (GridLayout) findViewById(R.id.layoutGrid);
         createButtons newButtons = new createButtons(this);
-        newButtons.build(grid);
+        ImageButton[] imageButtons;
+        imageButtons = newButtons.build(grid);
+        for(int i = 1; i<=2; i++){
+            grid.addView(imageButtons[i]);
+        }
 
     }
 }

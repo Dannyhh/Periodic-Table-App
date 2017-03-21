@@ -16,7 +16,9 @@
         <GridLayout
             android:id="@+id/layoutGrid"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:columnCount="18"
+            android:rowCount="7">
 
 
         </GridLayout>
