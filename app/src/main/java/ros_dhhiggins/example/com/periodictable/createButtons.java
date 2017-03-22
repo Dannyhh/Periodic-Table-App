@@ -1,7 +1,10 @@
 package ros_dhhiggins.example.com.periodictable;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
+import android.net.Uri;
+import android.view.View;
 import android.widget.Button;
 import android.widget.GridLayout;
 import android.widget.ImageButton;
@@ -23,7 +26,7 @@ public class createButtons{
         }
 
 
-    public ImageButton[] build(GridLayout grid){
+    public ImageButton[] build(GridLayout grid, View view){
             ImageButton[] elementButtons = new ImageButton[126]; // need 126 images or crash
                 for(int i=1; i<=2; i++){
 
@@ -31,6 +34,8 @@ public class createButtons{
                     name = "image"+i;
                         elementButtons[i] = new ImageButton(context);
                         elementButtons[i].setImageResource(getImage(context, name));
+                        elementButtons[i].setBackgroundResource(0);
+                        setButtonClick(view,i,elementButtons[i]);
                         // creates the imageButton and sets it with the image specified by name
                     }
                                     //create buttons with onclick that takes the button number
@@ -45,4 +50,16 @@ public class createButtons{
                     private static int getImage(Context context, String name) {
                         return context.getResources().getIdentifier(name, "drawable", context.getPackageName());
     }
+
+                    private void setButtonClick(View view, final int i, ImageButton buttonToSet){
+                        buttonToSet.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+                            Intent specificElement = new Intent(context, SpecificElement.class);
+                            specificElement.putExtra("elementNumber", i);
+                            //startActivity(specificElement);
+                            }
+                        });
+                    }
 }
+

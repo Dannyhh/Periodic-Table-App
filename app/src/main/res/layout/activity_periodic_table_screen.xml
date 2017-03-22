@@ -19,7 +19,8 @@
             android:layout_height="wrap_content"
             android:columnCount="18"
             android:rowCount="7"
-            android:layout_margin="0dp">
+            android:layout_margin="0dp"
+            android:horizontalSpacing ="0dp">
 
 
 

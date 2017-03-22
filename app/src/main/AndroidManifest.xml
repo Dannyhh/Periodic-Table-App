@@ -16,9 +16,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".PeriodicTableScreen" />
-        <activity android:name=".ElementInfo">
-
-        </activity>
+        <activity android:name=".ElementInfo"></activity>
+        <activity android:name=".SpecificElement"></activity>
     </application>
 
 </manifest>
