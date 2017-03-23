@@ -23,7 +23,7 @@ public class PeriodicTableScreen extends AppCompatActivity {
         GridLayout grid = (GridLayout) findViewById(R.id.layoutGrid);
         createButtons newButtons = new createButtons(this);
         ImageButton[] imageButtons;
-        imageButtons = newButtons.build(grid);
+        imageButtons = newButtons.build();
         for(int i = 1; i<=2; i++){
             grid.addView(imageButtons[i]);
         }

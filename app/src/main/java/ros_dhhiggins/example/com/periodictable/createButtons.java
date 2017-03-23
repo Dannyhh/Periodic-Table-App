@@ -1,5 +1,6 @@
 package ros_dhhiggins.example.com.periodictable;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
@@ -12,6 +13,7 @@ import android.widget.ImageView;
 
 import java.lang.reflect.Array;
 
+import static android.R.attr.targetActivity;
 import static android.R.attr.type;
 
 /**
@@ -19,14 +21,15 @@ import static android.R.attr.type;
  * This class creates all of the buttons used in the gridLayout for the periodic table
  */
 
-public class createButtons{
+public class createButtons extends Activity{
     private Context context;
+
         createButtons(Context context){
-            this.context = context.getApplicationContext();
+            this.context = context;
         }
 
 
-    public ImageButton[] build(GridLayout grid, View view){
+    public ImageButton[] build(){
             ImageButton[] elementButtons = new ImageButton[126]; // need 126 images or crash
                 for(int i=1; i<=2; i++){
 
@@ -35,7 +38,7 @@ public class createButtons{
                         elementButtons[i] = new ImageButton(context);
                         elementButtons[i].setImageResource(getImage(context, name));
                         elementButtons[i].setBackgroundResource(0);
-                        setButtonClick(view,i,elementButtons[i]);
+                        setButtonClick(i,elementButtons[i]);
                         // creates the imageButton and sets it with the image specified by name
                     }
                                     //create buttons with onclick that takes the button number
@@ -51,13 +54,14 @@ public class createButtons{
                         return context.getResources().getIdentifier(name, "drawable", context.getPackageName());
     }
 
-                    private void setButtonClick(View view, final int i, ImageButton buttonToSet){
+                    private void setButtonClick(final int i,ImageButton buttonToSet){
                         buttonToSet.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View view) {
                             Intent specificElement = new Intent(context, SpecificElement.class);
                             specificElement.putExtra("elementNumber", i);
-                            //startActivity(specificElement);
+                            context.startActivity(specificElement);
+
                             }
                         });
                     }
