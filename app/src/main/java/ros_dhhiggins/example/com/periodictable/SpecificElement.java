@@ -1,8 +1,8 @@
 package ros_dhhiggins.example.com.periodictable;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
 public class SpecificElement extends AppCompatActivity {
@@ -15,6 +15,6 @@ public class SpecificElement extends AppCompatActivity {
         Intent intent = getIntent();
         int arrayNumber = intent.getIntExtra("elementNumber", 0);
         TextView text = (TextView) findViewById(R.id.elementInfo);
-        text.setText(arrayNumber);
+        text.setText(String.valueOf(arrayNumber));
     }
 }

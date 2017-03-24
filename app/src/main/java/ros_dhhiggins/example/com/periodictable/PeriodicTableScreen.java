@@ -1,18 +1,9 @@
 package ros_dhhiggins.example.com.periodictable;
 
-import android.content.Context;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.widget.EditText;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.GridLayout;
-import android.widget.GridView;
 import android.widget.ImageButton;
-import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
-
-import static java.security.AccessController.getContext;
 
 public class PeriodicTableScreen extends AppCompatActivity {
 

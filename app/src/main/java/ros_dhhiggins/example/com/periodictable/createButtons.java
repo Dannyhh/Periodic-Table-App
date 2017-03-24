@@ -3,18 +3,8 @@ package ros_dhhiggins.example.com.periodictable;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.drawable.Drawable;
-import android.net.Uri;
 import android.view.View;
-import android.widget.Button;
-import android.widget.GridLayout;
 import android.widget.ImageButton;
-import android.widget.ImageView;
-
-import java.lang.reflect.Array;
-
-import static android.R.attr.targetActivity;
-import static android.R.attr.type;
 
 /**
  * Created by Danny Higgins on 3/16/2017.
@@ -24,9 +14,9 @@ import static android.R.attr.type;
 public class createButtons extends Activity{
     private Context context;
 
-        createButtons(Context context){
-            this.context = context;
-        }
+    createButtons(Context context) {
+        this.context = context;
+    }
 
 
     public ImageButton[] build(){
