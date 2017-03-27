@@ -2,8 +2,8 @@ package ros_dhhiggins.example.com.periodictable;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.GridLayout;
 import android.widget.ImageButton;
+import android.widget.TableLayout;
 
 public class PeriodicTableScreen extends AppCompatActivity {
 
@@ -11,12 +11,17 @@ public class PeriodicTableScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_periodic_table_screen);
-        GridLayout grid = (GridLayout) findViewById(R.id.layoutGrid);
+
+        TableLayout table = (TableLayout) findViewById(R.id.LayoutTable);
+
+
+        //could also try table layout if grid layout doesn't work.
         createButtons newButtons = new createButtons(this);
         ImageButton[] imageButtons;
         imageButtons = newButtons.build();
-        for(int i = 1; i<=2; i++){
-            grid.addView(imageButtons[i]);
+        for (int i = 1; i <= 18; i++) {
+            table.addView(imageButtons[i]);
+
         }
 
     }

@@ -21,16 +21,23 @@ public class createButtons extends Activity{
 
     public ImageButton[] build(){
             ImageButton[] elementButtons = new ImageButton[126]; // need 126 images or crash
-                for(int i=1; i<=2; i++){
+        for (int i = 1; i <= 18; i++) {
+            String elementName; //the name of the images
+            elementName = "image" + i;
 
-                    String name; //the name of the images
-                    name = "image"+i;
+            if (i > 2 && i < 18) {
                         elementButtons[i] = new ImageButton(context);
-                        elementButtons[i].setImageResource(getImage(context, name));
+                elementButtons[i].setImageResource(getImage(context, "blank"));
                         elementButtons[i].setBackgroundResource(0);
-                        setButtonClick(i,elementButtons[i]);
+
+            } else {
+                elementButtons[i] = new ImageButton(context);
+                elementButtons[i].setImageResource(getImage(context, elementName));
+                elementButtons[i].setBackgroundResource(0);
+                setButtonClick(i, elementButtons[i]);
                         // creates the imageButton and sets it with the image specified by name
                     }
+        }
                                     //create buttons with onclick that takes the button number
                                     //sets button number as extra
                                     //starts new activity with that extra and use String Array
