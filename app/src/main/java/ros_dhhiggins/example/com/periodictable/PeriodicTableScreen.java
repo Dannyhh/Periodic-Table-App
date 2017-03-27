@@ -14,14 +14,12 @@ public class PeriodicTableScreen extends AppCompatActivity {
 
         TableLayout table = (TableLayout) findViewById(R.id.LayoutTable);
 
-
-        //could also try table layout if grid layout doesn't work.
         createButtons newButtons = new createButtons(this);
         ImageButton[] imageButtons;
         imageButtons = newButtons.build();
         for (int i = 1; i <= 18; i++) {
             table.addView(imageButtons[i]);
-
+            //add new layoutparams
         }
 
     }
