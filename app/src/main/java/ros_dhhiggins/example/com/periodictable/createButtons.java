@@ -1,43 +1,43 @@
 package ros_dhhiggins.example.com.periodictable;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.drawable.Drawable;
-import android.net.Uri;
 import android.view.View;
-import android.widget.Button;
-import android.widget.GridLayout;
 import android.widget.ImageButton;
-import android.widget.ImageView;
-
-import java.lang.reflect.Array;
-
-import static android.R.attr.type;
 
 /**
  * Created by Danny Higgins on 3/16/2017.
  * This class creates all of the buttons used in the gridLayout for the periodic table
  */
 
-public class createButtons{
+public class createButtons extends Activity{
     private Context context;
-        createButtons(Context context){
-            this.context = context.getApplicationContext();
-        }
+
+    createButtons(Context context) {
+        this.context = context;
+    }
 
 
-    public ImageButton[] build(GridLayout grid, View view){
+    public ImageButton[] build(){
             ImageButton[] elementButtons = new ImageButton[126]; // need 126 images or crash
-                for(int i=1; i<=2; i++){
+        for (int i = 1; i <= 18; i++) {
+            String elementName; //the name of the images
+            elementName = "image" + i;
 
-                    String name; //the name of the images
-                    name = "image"+i;
+            if (i > 2 && i < 18) {
                         elementButtons[i] = new ImageButton(context);
-                        elementButtons[i].setImageResource(getImage(context, name));
+                elementButtons[i].setImageResource(getImage(context, "blank"));
                         elementButtons[i].setBackgroundResource(0);
-                        setButtonClick(view,i,elementButtons[i]);
+
+            } else {
+                elementButtons[i] = new ImageButton(context);
+                elementButtons[i].setImageResource(getImage(context, elementName));
+                elementButtons[i].setBackgroundResource(0);
+                setButtonClick(i, elementButtons[i]);
                         // creates the imageButton and sets it with the image specified by name
                     }
+        }
                                     //create buttons with onclick that takes the button number
                                     //sets button number as extra
                                     //starts new activity with that extra and use String Array
@@ -51,13 +51,14 @@ public class createButtons{
                         return context.getResources().getIdentifier(name, "drawable", context.getPackageName());
     }
 
-                    private void setButtonClick(View view, final int i, ImageButton buttonToSet){
+                    private void setButtonClick(final int i,ImageButton buttonToSet){
                         buttonToSet.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View view) {
                             Intent specificElement = new Intent(context, SpecificElement.class);
                             specificElement.putExtra("elementNumber", i);
-                            //startActivity(specificElement);
+                            context.startActivity(specificElement);
+
                             }
                         });
                     }

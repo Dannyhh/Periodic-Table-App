@@ -2,4 +2,5 @@
     <string name="app_name">Periodic Table</string>
     <string name="home">Home Screen</string>
     <string name="periodicTableButton">Periodic Table</string>
+    <string name="Home"> Home </string>
 </resources>
