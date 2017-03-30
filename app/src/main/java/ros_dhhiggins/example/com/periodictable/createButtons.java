@@ -26,10 +26,9 @@ public class createButtons extends Activity{
             elementName = "image" + i;
 
             if (i > 2 && i < 18) {
-                        elementButtons[i] = new ImageButton(context);
+                elementButtons[i] = new ImageButton(context);
                 elementButtons[i].setImageResource(getImage(context, "blank"));
-                        elementButtons[i].setBackgroundResource(0);
-
+                elementButtons[i].setBackgroundResource(0);
             } else {
                 elementButtons[i] = new ImageButton(context);
                 elementButtons[i].setImageResource(getImage(context, elementName));
@@ -46,17 +45,16 @@ public class createButtons extends Activity{
                 return elementButtons;
         }
 
-
-                    private static int getImage(Context context, String name) {
+    private static int getImage(Context context, String name) {
                         return context.getResources().getIdentifier(name, "drawable", context.getPackageName());
     }
 
-                    private void setButtonClick(final int i,ImageButton buttonToSet){
-                        buttonToSet.setOnClickListener(new View.OnClickListener() {
+    private void setButtonClick(final int i, ImageButton buttonToSet) {
+        buttonToSet.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View view) {
-                            Intent specificElement = new Intent(context, SpecificElement.class);
-                            specificElement.putExtra("elementNumber", i);
+                                Intent specificElement = new Intent(context, SpecificElement.class);
+                                specificElement.putExtra("elementNumber", i);
                             context.startActivity(specificElement);
 
                             }
