@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/PeriodicTable.iml" filepath="$PROJECT_DIR$/PeriodicTable.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Periodic-Table-App.iml" filepath="$PROJECT_DIR$/Periodic-Table-App.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
