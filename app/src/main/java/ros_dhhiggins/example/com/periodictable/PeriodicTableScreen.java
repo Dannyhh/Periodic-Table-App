@@ -5,7 +5,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageButton;
 import android.widget.TableLayout;
 import android.widget.TableRow;
-
 public class PeriodicTableScreen extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,11 +22,13 @@ public class PeriodicTableScreen extends AppCompatActivity {
         for(int j = 1; j <= 7; j++){
             TableRow tempRow = new TableRow(this);
 
+
             if(j==1) {
                 for (int temp = 0; temp <= 17; temp++) {
                     ImageButton tempButton = imageButtons[temp];
                     tempButton.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT,
                             TableRow.LayoutParams.WRAP_CONTENT));
+                    tempButton.setPadding(0,0,0,0);
                     tempRow.addView(imageButtons[temp]);
                 }
             }
@@ -36,6 +37,7 @@ public class PeriodicTableScreen extends AppCompatActivity {
                     ImageButton tempButton = imageButtons[temp];
                     tempButton.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT,
                             TableRow.LayoutParams.WRAP_CONTENT));
+                    tempButton.setPadding(0,0,0,0);
                     tempRow.addView(imageButtons[temp]);
                 }
             }
@@ -44,6 +46,7 @@ public class PeriodicTableScreen extends AppCompatActivity {
                     ImageButton tempButton = imageButtons[temp];
                     tempButton.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT,
                             TableRow.LayoutParams.WRAP_CONTENT));
+                    tempButton.setPadding(0,0,0,0);
                     tempRow.addView(imageButtons[temp]);
                 }
             }
@@ -52,6 +55,7 @@ public class PeriodicTableScreen extends AppCompatActivity {
                     ImageButton tempButton = imageButtons[temp];
                     tempButton.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT,
                             TableRow.LayoutParams.WRAP_CONTENT));
+                    tempButton.setPadding(0,0,0,0);
                     tempRow.addView(imageButtons[temp]);
                 }
             }
@@ -60,6 +64,7 @@ public class PeriodicTableScreen extends AppCompatActivity {
                     ImageButton tempButton = imageButtons[temp];
                     tempButton.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT,
                             TableRow.LayoutParams.WRAP_CONTENT));
+                    tempButton.setPadding(0,0,0,0);
                     tempRow.addView(imageButtons[temp]);
                 }
             }
@@ -68,6 +73,7 @@ public class PeriodicTableScreen extends AppCompatActivity {
                     ImageButton tempButton = imageButtons[temp];
                     tempButton.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT,
                             TableRow.LayoutParams.WRAP_CONTENT));
+                    tempButton.setPadding(0,0,0,0);
                     tempRow.addView(imageButtons[temp]);
                 }
             }
@@ -76,6 +82,7 @@ public class PeriodicTableScreen extends AppCompatActivity {
                     ImageButton tempButton = imageButtons[temp];
                     tempButton.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT,
                             TableRow.LayoutParams.WRAP_CONTENT));
+                    tempButton.setPadding(0,0,0,0);
                     tempRow.addView(imageButtons[temp]);
                 }
             }
