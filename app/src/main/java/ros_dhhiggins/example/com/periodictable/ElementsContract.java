@@ -9,11 +9,11 @@ import android.provider.BaseColumns;
 public class ElementsContract implements BaseColumns{
 
     //public static final class ElementsTable implements BaseColumns {
-        public static final String ELEMENT_TABLE = "elements";
+    public static final String ELEMENT_TABLE = "elements";
 
-        public static final String ELEMENT_NAME = "name";
-        public static final String ATOMIC_NUMBER = "number";
-        public static final String SHORT_FORM = "short";
+    public static final String ELEMENT_NAME = "name";
+    public static final String ATOMIC_NUMBER = "number";
+    public static final String SHORT_FORM = "short";
     //}
 
 }

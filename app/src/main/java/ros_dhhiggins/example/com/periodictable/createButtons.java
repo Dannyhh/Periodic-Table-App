@@ -20,7 +20,7 @@ public class createButtons extends Activity{
 
 
     public ImageButton[] build(){
-            ImageButton[] elementButtons = new ImageButton[126]; // need 126 images or crash
+        ImageButton[] elementButtons = new ImageButton[126]; // need 126 images or crash
         for (int i = 0; i <= 125; i++) {
             String elementName; //the name of the images
             elementName = "image" + i;
@@ -42,27 +42,27 @@ public class createButtons extends Activity{
                 elementButtons[i].setImageResource(getImage(context, "blank"));
                 elementButtons[i].setBackgroundResource(0);
 
-                        // creates the imageButton and sets it with the image specified by name
-                    }
+                // creates the imageButton and sets it with the image specified by name
+            }
         }
-                return elementButtons;
-        }
+        return elementButtons;
+    }
 
     private static int getImage(Context context, String name) {
-                        return context.getResources().getIdentifier(name, "drawable",
-                                context.getPackageName());
+        return context.getResources().getIdentifier(name, "drawable",
+                context.getPackageName());
     }
 
     private void setButtonClick(final int i, ImageButton buttonToSet) {
         buttonToSet.setOnClickListener(new View.OnClickListener() {
-                            @Override
-                            public void onClick(View view) {
-                                Intent specificElement = new Intent(context, SpecificElement.class);
-                                specificElement.putExtra("elementNumber", i);
-                            context.startActivity(specificElement);
+            @Override
+            public void onClick(View view) {
+                Intent specificElement = new Intent(context, SpecificElement.class);
+                specificElement.putExtra("elementNumber", i);
+                context.startActivity(specificElement);
 
-                            }
-                        });
-                    }
+            }
+        });
+    }
 }
 
