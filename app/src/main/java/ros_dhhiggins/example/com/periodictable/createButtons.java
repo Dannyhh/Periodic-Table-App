@@ -21,32 +21,36 @@ public class createButtons extends Activity{
 
     public ImageButton[] build(){
             ImageButton[] elementButtons = new ImageButton[126]; // need 126 images or crash
-        for (int i = 1; i <= 18; i++) {
+        for (int i = 0; i <= 125; i++) {
             String elementName; //the name of the images
             elementName = "image" + i;
 
-            if (i > 2 && i < 18) {
-                elementButtons[i] = new ImageButton(context);
-                elementButtons[i].setImageResource(getImage(context, "blank"));
-                elementButtons[i].setBackgroundResource(0);
-            } else {
+            if ((i == 0 || i == 17)) {
+
+
+
                 elementButtons[i] = new ImageButton(context);
                 elementButtons[i].setImageResource(getImage(context, elementName));
                 elementButtons[i].setBackgroundResource(0);
                 setButtonClick(i, elementButtons[i]);
+
+            }
+            else {
+
+
+                elementButtons[i] = new ImageButton(context);
+                elementButtons[i].setImageResource(getImage(context, "blank"));
+                elementButtons[i].setBackgroundResource(0);
+
                         // creates the imageButton and sets it with the image specified by name
                     }
         }
-                                    //create buttons with onclick that takes the button number
-                                    //sets button number as extra
-                                    //starts new activity with that extra and use String Array
-                                    //use extra to find the info we need about the element and display
-
                 return elementButtons;
         }
 
     private static int getImage(Context context, String name) {
-                        return context.getResources().getIdentifier(name, "drawable", context.getPackageName());
+                        return context.getResources().getIdentifier(name, "drawable",
+                                context.getPackageName());
     }
 
     private void setButtonClick(final int i, ImageButton buttonToSet) {

@@ -11,7 +11,7 @@
     tools:context="ros_dhhiggins.example.com.periodictable.MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/welcomeMessage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
