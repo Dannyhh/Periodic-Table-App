@@ -39,7 +39,7 @@ public class createButtons extends Activity{
                 setButtonClick(i, elementButtons[i]);
             }
 
-            else if(i==36 || i==37){ //row three
+            else if(i==36 || i==37 || (i>=48 && i<=53)){ //row three
                 elementButtons[i] = new ImageButton(context);
                 elementButtons[i].setImageResource(getImage(context, elementName));
                 elementButtons[i].setBackgroundResource(0);
