@@ -6,26 +6,27 @@ import android.content.Intent;
 import android.view.View;
 import android.widget.ImageButton;
 
+
 /**
  * Created by Danny Higgins on 3/16/2017.
  * This class creates all of the buttons used in the gridLayout for the periodic table
  */
-
 public class createButtons extends Activity{
     private Context context;
-
     createButtons(Context context) {
         this.context = context;
     }
-
-
     public ImageButton[] build(){
         ImageButton[] elementButtons = new ImageButton[126];
         for (int i = 0; i <= 125; i++) {
-            String elementName; //the name of the images
-            elementName = "image" + i;
+            String elementName = "image" + i;  //the name of the images
 
-            if (i==0 || i==17) { // row one
+            if(i==1){
+                elementButtons[i] = new ImageButton(context);
+                elementButtons[i].setImageResource(getImage(context, "popup"));
+                elementButtons[i].setBackgroundResource(0);
+            }
+            else if (i==0 || i==17) { // row one
                 elementButtons[i] = new ImageButton(context);
                 elementButtons[i].setImageResource(getImage(context, elementName));
                 elementButtons[i].setBackgroundResource(0);
@@ -73,5 +74,6 @@ public class createButtons extends Activity{
             }
         });
     }
+
 }
 
