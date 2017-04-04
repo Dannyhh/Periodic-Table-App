@@ -31,14 +31,14 @@ public class createButtons extends Activity{
                 elementButtons[i].setBackgroundResource(0);
                 setButtonClick(i, elementButtons[i]);
             }
-            else if(i==18 || i==19 || (i>=29 && i<=34)){//row two
+            else if(i==18 || i==19 || (i>=30 && i<=35)){//row two
                 elementButtons[i] = new ImageButton(context);
                 elementButtons[i].setImageResource(getImage(context, elementName));
                 elementButtons[i].setBackgroundResource(0);
                 setButtonClick(i, elementButtons[i]);
             }
 
-            else if(i==35 || i==36){ //row three
+            else if(i==36 || i==37){ //row three
                 elementButtons[i] = new ImageButton(context);
                 elementButtons[i].setImageResource(getImage(context, elementName));
                 elementButtons[i].setBackgroundResource(0);
