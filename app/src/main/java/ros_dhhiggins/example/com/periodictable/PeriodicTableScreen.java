@@ -21,8 +21,6 @@ public class PeriodicTableScreen extends AppCompatActivity {
 
         for(int j = 1; j <= 7; j++){
             TableRow tempRow = new TableRow(this);
-
-
             if(j==1) {
                 for (int temp = 0; temp <= 17; temp++) {
                     ImageButton tempButton = imageButtons[temp];
@@ -33,7 +31,7 @@ public class PeriodicTableScreen extends AppCompatActivity {
                 }
             }
             else if (j==2){
-                for(int temp = 18; temp <=35; temp++){
+                for(int temp = 18; temp <=34; temp++){
                     ImageButton tempButton = imageButtons[temp];
                     tempButton.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT,
                             TableRow.LayoutParams.WRAP_CONTENT));
@@ -42,7 +40,7 @@ public class PeriodicTableScreen extends AppCompatActivity {
                 }
             }
             else if (j==3){
-                for(int temp = 36; temp <=53; temp++){
+                for(int temp = 35; temp <=52; temp++){
                     ImageButton tempButton = imageButtons[temp];
                     tempButton.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT,
                             TableRow.LayoutParams.WRAP_CONTENT));

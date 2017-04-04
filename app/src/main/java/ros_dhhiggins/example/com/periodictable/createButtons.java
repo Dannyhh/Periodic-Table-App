@@ -25,18 +25,27 @@ public class createButtons extends Activity{
             String elementName; //the name of the images
             elementName = "image" + i;
 
-            if ((i == 0 || i == 17)) {
-
-
-
+            if (i==0 || i==17) { // row one
                 elementButtons[i] = new ImageButton(context);
                 elementButtons[i].setImageResource(getImage(context, elementName));
                 elementButtons[i].setBackgroundResource(0);
                 setButtonClick(i, elementButtons[i]);
-
             }
-            else {
+            else if(i==18 || i==19 || (i>=29 && i<=34)){//row two
+                elementButtons[i] = new ImageButton(context);
+                elementButtons[i].setImageResource(getImage(context, elementName));
+                elementButtons[i].setBackgroundResource(0);
+                setButtonClick(i, elementButtons[i]);
+            }
 
+            else if(i==35 || i==36){ //row three
+                elementButtons[i] = new ImageButton(context);
+                elementButtons[i].setImageResource(getImage(context, elementName));
+                elementButtons[i].setBackgroundResource(0);
+                setButtonClick(i, elementButtons[i]);
+            }
+
+            else {
 
                 elementButtons[i] = new ImageButton(context);
                 elementButtons[i].setImageResource(getImage(context, "blank"));
