@@ -20,7 +20,7 @@ public class createButtons extends Activity{
 
 
     public ImageButton[] build(){
-        ImageButton[] elementButtons = new ImageButton[126]; // need 126 images or crash
+        ImageButton[] elementButtons = new ImageButton[126];
         for (int i = 0; i <= 125; i++) {
             String elementName; //the name of the images
             elementName = "image" + i;
