@@ -63,6 +63,13 @@ public class createButtons extends Activity{
                 elementButtons[i].setBackgroundResource(0);
                 setButtonClick(i, elementButtons[i]);
             }
+
+            else if(i==108|| i==109 ||(i>=111 &&i<=125)){ //row 6 without extra chunk
+                elementButtons[i] = new ImageButton(context);
+                elementButtons[i].setImageResource(getImage(context, elementName));
+                elementButtons[i].setBackgroundResource(0);
+                setButtonClick(i, elementButtons[i]);
+            }
             else {
 
                 elementButtons[i] = new ImageButton(context);
