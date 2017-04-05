@@ -45,6 +45,12 @@ public class createButtons extends Activity{
                 elementButtons[i].setBackgroundResource(0);
                 setButtonClick(i, elementButtons[i]);
             }
+            else if(i>=54 && i<=71){ //row 4
+                elementButtons[i] = new ImageButton(context);
+                elementButtons[i].setImageResource(getImage(context, elementName));
+                elementButtons[i].setBackgroundResource(0);
+                setButtonClick(i, elementButtons[i]);
+            }
 
             else {
 
