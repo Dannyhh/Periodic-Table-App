@@ -51,6 +51,12 @@ public class createButtons extends Activity{
                 elementButtons[i].setBackgroundResource(0);
                 setButtonClick(i, elementButtons[i]);
             }
+            else if(i>=72 && i<=89){ //row 5
+                elementButtons[i] = new ImageButton(context);
+                elementButtons[i].setImageResource(getImage(context, elementName));
+                elementButtons[i].setBackgroundResource(0);
+                setButtonClick(i, elementButtons[i]);
+            }
 
             else {
 
