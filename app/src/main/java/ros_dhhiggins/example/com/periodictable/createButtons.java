@@ -20,13 +20,7 @@ public class createButtons extends Activity{
         ImageButton[] elementButtons = new ImageButton[126];
         for (int i = 0; i <= 125; i++) {
             String elementName = "image" + i;  //the name of the images
-
-            if(i==1){
-                elementButtons[i] = new ImageButton(context);
-                elementButtons[i].setImageResource(getImage(context, "popup"));
-                elementButtons[i].setBackgroundResource(0);
-            }
-            else if (i==0 || i==17) { // row one
+             if (i==0 || i==17) { // row one
                 elementButtons[i] = new ImageButton(context);
                 elementButtons[i].setImageResource(getImage(context, elementName));
                 elementButtons[i].setBackgroundResource(0);
@@ -81,6 +75,13 @@ public class createButtons extends Activity{
         }
         return elementButtons;
     }
+
+    public ImageButton getKey(){
+            ImageButton keyButton = new ImageButton(context);
+            keyButton.setImageResource(getImage(context, "popup"));
+            keyButton.setBackgroundResource(0);
+            return keyButton;
+        }
 
     private static int getImage(Context context, String name) {
         return context.getResources().getIdentifier(name, "drawable",
