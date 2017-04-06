@@ -18,10 +18,18 @@
         android:text="@string/home"
         android:textSize="50sp"/>
     <Button
+        android:id="@+id/goToPeriodic"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_below="@+id/welcomeMessage"
         android:hint="@string/periodicTableButton"
         android:onClick="launchPeriodicTable"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/goToPeriodic"
+        android:hint="@string/mainKeyButton"
+        android:onClick="launchKey"
         />
 </RelativeLayout>

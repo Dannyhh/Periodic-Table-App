@@ -2,9 +2,9 @@
     <string name="app_name">Periodic Table</string>
     <string name="home">Home Screen</string>
     <string name="periodicTableButton">Periodic Table</string>
+    <string name="mainKeyButton"> Key </string>
     <string name="Home"> Home </string>
     <string name="Close"> Close </string>
-
 
 
 </resources>

@@ -18,5 +18,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(launch);
     }
 
+    public void launchKey(View view) {
+        Intent goToKey = new Intent(this, MainKeyScreen.class);
+        startActivity(goToKey);
+    }
+
+
 
 }
