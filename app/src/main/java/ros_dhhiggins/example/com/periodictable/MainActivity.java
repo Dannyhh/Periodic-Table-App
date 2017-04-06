@@ -13,11 +13,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void launchPeriodicTable(View view){
+    public void launchPeriodicTable(View view) {
         Intent launch = new Intent(this, PeriodicTableScreen.class);
         startActivity(launch);
     }
 
 
 }
-

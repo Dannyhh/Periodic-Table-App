@@ -3,14 +3,13 @@ package ros_dhhiggins.example.com.periodictable;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.provider.ContactsContract;
 
 /**
  * Created by ros_mmanant on 3/29/2017.
  */
 // create and initialize the database
 //SQLiteOpenHelper – create the database and help us handle database versioning
-public class ElementDBHelper extends SQLiteOpenHelper{
+public class ElementDBHelper extends SQLiteOpenHelper {
     static final String DATABASE_NAME = "elements.db";
 
     // If you change the database schema, you must increment the database version
@@ -23,10 +22,10 @@ public class ElementDBHelper extends SQLiteOpenHelper{
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
 
-        final String SQL_CREATE_ELEMENT_TABLE = "CREATE TABLE "
-                + ElementsContract.ELEMENT_TABLE + "(" + ElementsContract._ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
-                + ElementsContract.ELEMENT_NAME + " TEXT NOT NULL, " + ElementsContract.ATOMIC_NUMBER + " INT NOT NULL, "
-                + ElementsContract.SHORT_FORM + " TEXT NOT NULL" + ");";
+        final String SQL_CREATE_ELEMENT_TABLE = "CREATE TABLE " +
+                ElementsContract.ELEMENT_TABLE + "(" + ElementsContract._ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
+                ElementsContract.ELEMENT_NAME + " TEXT NOT NULL, " + ElementsContract.ATOMIC_NUMBER + " INT NOT NULL, " +
+                ElementsContract.SHORT_FORM + " TEXT NOT NULL" + ");";
 
         sqLiteDatabase.execSQL(SQL_CREATE_ELEMENT_TABLE);
     }

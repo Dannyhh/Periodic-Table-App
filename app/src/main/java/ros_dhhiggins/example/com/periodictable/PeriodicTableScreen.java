@@ -3,7 +3,6 @@ package ros_dhhiggins.example.com.periodictable;
 import android.app.Activity;
 import android.content.Context;
 import android.graphics.Point;
-import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
@@ -16,7 +15,6 @@ import android.widget.PopupWindow;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 
-import static android.view.ViewGroup.LayoutParams.FILL_PARENT;
 import static android.view.ViewGroup.LayoutParams.WRAP_CONTENT;
 
 public class PeriodicTableScreen extends AppCompatActivity {
@@ -40,11 +38,31 @@ public class PeriodicTableScreen extends AppCompatActivity {
             TableRow tempRow = new TableRow(this);
             if (j == 1) {
                 for (int temp = 0; temp <= 17; temp++) {
-                    ImageButton tempButton = imageButtons[temp];
-                    tempButton.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT,
-                            TableRow.LayoutParams.WRAP_CONTENT));
-                    tempButton.setPadding(0, 0, 0, 0);
-                    tempRow.addView(tempButton);
+                    if (temp == 1) {
+                        keyButton.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT,
+                                TableRow.LayoutParams.WRAP_CONTENT));
+                        keyButton.setPadding(0, 0, 0, 0);
+                        tempRow.addView(keyButton);
+                        int[] location = new int[2];
+                        keyButton.getLocationOnScreen(location);
+                        p = new Point();
+                        p.x = location[0];
+                        p.y = location[1];
+                        keyButton.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View arg0) {
+                                //Open popup window
+                                if (p != null)
+                                    showPopup(PeriodicTableScreen.this, p);
+                            }
+                        });
+                    } else {
+                        ImageButton tempButton = imageButtons[temp];
+                        tempButton.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT,
+                                TableRow.LayoutParams.WRAP_CONTENT));
+                        tempButton.setPadding(0, 0, 0, 0);
+                        tempRow.addView(tempButton);
+                    }
                 }
             } else if (j == 2) {
                 for (int temp = 18; temp <= 35; temp++) {
@@ -95,56 +113,25 @@ public class PeriodicTableScreen extends AppCompatActivity {
                     tempRow.addView(tempButton);
                 }
             }
-            else if (j == 8) {
-                    keyButton.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT,
-                            TableRow.LayoutParams.WRAP_CONTENT));
-                    keyButton.setPadding(0, 0, 0, 0);
-                    tempRow.addView(keyButton);
-                int[] location = new int[2];
-                keyButton.getLocationOnScreen(location);
-                p = new Point();
-                p.x = location[0];
-                p.y = location[1];
-                keyButton.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View arg0) {
-                        //Open popup window
-                        if (p != null)
-                            showPopup(PeriodicTableScreen.this, p);
-                    }
-                });
-                }
-                    table.addView(tempRow, new TableLayout.LayoutParams(TableLayout.LayoutParams.WRAP_CONTENT,
-                            TableLayout.LayoutParams.WRAP_CONTENT));
-            }
+            table.addView(tempRow, new TableLayout.LayoutParams(TableLayout.LayoutParams.WRAP_CONTENT,
+                    TableLayout.LayoutParams.WRAP_CONTENT));
         }
+    }
     private void showPopup(final Activity context, Point p) {
-        // Inflate the popup_layout.xml
         LinearLayout viewGroup = (LinearLayout) context.findViewById(R.id.popup);
-
-
         LayoutInflater layoutInflater = (LayoutInflater) context
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View layout = layoutInflater.inflate(R.layout.key_popup_layout, viewGroup);
-        // Creating the PopupWindow
         final PopupWindow popup = new PopupWindow(context);
         popup.setContentView(layout);
         popup.setWidth(WRAP_CONTENT);
         popup.setHeight(WRAP_CONTENT);
         popup.setFocusable(true);
         popup.setOutsideTouchable(true);
-        // Some offset to align the popup a bit to the right, and a bit down, relative to button's position.
         int OFFSET_X = 300;
         int OFFSET_Y = 100;
-        // Clear the default translucent background
-        popup.setBackgroundDrawable(new BitmapDrawable());
-        // Displaying the popup at the specified location, + offsets.
         popup.showAtLocation(layout, Gravity.NO_GRAVITY, p.x + OFFSET_X, p.y + OFFSET_Y);
-        // Getting a reference to Close button, and close the popup when clicked.
         Button close = (Button) layout.findViewById(R.id.close);
-
-
-
         close.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
