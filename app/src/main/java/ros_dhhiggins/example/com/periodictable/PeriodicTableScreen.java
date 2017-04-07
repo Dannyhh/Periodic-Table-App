@@ -34,7 +34,7 @@ public class PeriodicTableScreen extends AppCompatActivity {
         ImageButton keyButton;
         keyButton = newButtons.getKey();
 
-        for (int j = 1; j <= 8; j++) {
+        for (int j = 1; j <= 7; j++) {
             TableRow tempRow = new TableRow(this);
             if (j == 1) {
                 for (int temp = 0; temp <= 17; temp++) {

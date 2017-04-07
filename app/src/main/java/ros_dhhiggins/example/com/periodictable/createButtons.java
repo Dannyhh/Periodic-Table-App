@@ -55,7 +55,22 @@ public class createButtons extends Activity {
                 elementButtons[i].setImageResource(getImage(context, elementName));
                 elementButtons[i].setBackgroundResource(0);
                 setButtonClick(i, elementButtons[i]);
-            } else {
+            }
+                else if(i==92){
+                String bonusRowOne = "extrarow1";
+                elementButtons[i] = new ImageButton(context);
+                elementButtons[i].setImageResource(getImage(context, bonusRowOne));
+                elementButtons[i].setBackgroundResource(0);
+                setExtraClick(elementButtons[i]);
+            }
+            else if(i==110){
+                String bonusRowTwo = "extrarow2";
+                elementButtons[i] = new ImageButton(context);
+                elementButtons[i].setImageResource(getImage(context, bonusRowTwo));
+                elementButtons[i].setBackgroundResource(0);
+                setExtraClick(elementButtons[i]);
+            }
+             else {
 
                 elementButtons[i] = new ImageButton(context);
                 elementButtons[i].setImageResource(getImage(context, "blank"));
@@ -77,6 +92,17 @@ public class createButtons extends Activity {
     private static int getImage(Context context, String name) {
         return context.getResources().getIdentifier(name, "drawable",
                 context.getPackageName());
+    }
+
+    private void setExtraClick(ImageButton buttonToSet){
+        buttonToSet.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+               // Intent specificElement = new Intent(context, BonusElements.class);
+                //context.startActivity(BonusElements);
+
+            }
+        });
     }
 
     private void setButtonClick(final int i, ImageButton buttonToSet) {
