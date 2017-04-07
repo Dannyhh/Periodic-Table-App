@@ -82,6 +82,7 @@ public class createButtons extends Activity {
         return elementButtons;
     }
 
+
     public ImageButton getKey() {
         ImageButton keyButton = new ImageButton(context);
         keyButton.setImageResource(getImage(context, "popup"));
@@ -98,8 +99,8 @@ public class createButtons extends Activity {
         buttonToSet.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               // Intent specificElement = new Intent(context, BonusElements.class);
-                //context.startActivity(BonusElements);
+                Intent bonusElement = new Intent(context, BonusElements.class);
+                context.startActivity(bonusElement);
 
             }
         });
