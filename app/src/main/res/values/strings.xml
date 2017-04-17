@@ -5,6 +5,7 @@
     <string name="mainKeyButton"> Key </string>
     <string name="Home"> Home </string>
     <string name="Close"> Close </string>
+    <string name="mainKeyWelcome"> Welcome, Click any of the buttons to learn more about the type of element</string>
 
 
 </resources>

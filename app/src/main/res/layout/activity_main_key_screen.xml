@@ -11,9 +11,20 @@
     tools:context="ros_dhhiggins.example.com.periodictable.MainActivity">
 
     <Button
+        android:id="@+id/closeKeyButton"
+        android:layout_alignParentBottom="true"
         android:onClick="goBack"
         android:layout_width="75dp"
         android:layout_height="50dp"
         android:hint="@string/Close"/>
+    <TextView
+        android:id="@+id/keyIntroMessage"
+        android:gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="@string/mainKeyWelcome"/>
+
+
 
 </RelativeLayout>
