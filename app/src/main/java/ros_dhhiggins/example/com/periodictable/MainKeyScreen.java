@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TableLayout;
+import android.widget.TableRow;
 
 public class MainKeyScreen extends AppCompatActivity {
     TableLayout mainGrid;
@@ -16,7 +17,7 @@ public class MainKeyScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_key_screen);
         TableLayout mainGrid = (TableLayout) findViewById(R.id.keyGrid);
-        genButtons(MainKeyScreen.this,mainGrid );
+        genButtons(MainKeyScreen.this,mainGrid);
     }
 
 
@@ -39,6 +40,18 @@ public class MainKeyScreen extends AppCompatActivity {
             keyButtons[i].setImageResource(getImage(context, keyNames[i]));
             keyButtons[i].setBackgroundResource(0);
             setButtonClick(i, keyButtons[i], context);
+        }
+        for (int j = 1; j <= 5; j++) {
+            TableRow tempRow = new TableRow(this);
+            tempRow.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT,
+                    TableRow.LayoutParams.WRAP_CONTENT));
+            //tempRow.setHorizontalGravity();
+            if (j == 1) {
+                tempRow.addView(keyButtons[0]);
+                tempRow.addView(keyButtons[1]);
+            }
+            mainGrid.addView(tempRow, new TableLayout.LayoutParams(TableLayout.LayoutParams.WRAP_CONTENT,
+                    TableLayout.LayoutParams.WRAP_CONTENT));
         }
     }
 
