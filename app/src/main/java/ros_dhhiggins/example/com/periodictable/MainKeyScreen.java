@@ -11,7 +11,6 @@ import android.widget.TableLayout;
 import android.widget.TableRow;
 
 public class MainKeyScreen extends AppCompatActivity {
-    TableLayout mainGrid;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,7 +34,7 @@ public class MainKeyScreen extends AppCompatActivity {
         keyNames[8]= "semimetal";
         keyNames[9]= "transition";
 
-        for(int i = 0; i<10; i++) {
+        for(int i = 0; i<=9; i++) {
             keyButtons[i] = new ImageButton(context);
             keyButtons[i].setImageResource(getImage(context, keyNames[i]));
             keyButtons[i].setBackgroundResource(0);
@@ -45,10 +44,25 @@ public class MainKeyScreen extends AppCompatActivity {
             TableRow tempRow = new TableRow(this);
             tempRow.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT,
                     TableRow.LayoutParams.WRAP_CONTENT));
-            //tempRow.setHorizontalGravity();
             if (j == 1) {
                 tempRow.addView(keyButtons[0]);
                 tempRow.addView(keyButtons[1]);
+            }
+            else if(j==2){
+                tempRow.addView(keyButtons[2]);
+                tempRow.addView(keyButtons[3]);
+            }
+            else if(j==3){
+                tempRow.addView(keyButtons[4]);
+                tempRow.addView(keyButtons[5]);
+            }
+            else if(j==4){
+                tempRow.addView(keyButtons[6]);
+                tempRow.addView(keyButtons[7]);
+            }
+            else if(j==5){
+                tempRow.addView(keyButtons[8]);
+                tempRow.addView(keyButtons[9]);
             }
             mainGrid.addView(tempRow, new TableLayout.LayoutParams(TableLayout.LayoutParams.WRAP_CONTENT,
                     TableLayout.LayoutParams.WRAP_CONTENT));

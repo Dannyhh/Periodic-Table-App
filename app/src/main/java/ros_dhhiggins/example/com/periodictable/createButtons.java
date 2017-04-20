@@ -17,7 +17,7 @@ public class createButtons extends Activity {
         this.context = context;
     }
     public ImageButton[] build() {
-        ImageButton[] elementButtons = new ImageButton[126];
+        ImageButton[] elementButtons = new ImageButton[144];
         for (int i = 0; i <= 125; i++) {
             String elementName = "image" + i; //the name of the images
             if (i == 0 || i == 17) { // row one
@@ -70,6 +70,20 @@ public class createButtons extends Activity {
                 elementButtons[i].setBackgroundResource(0);
                 setExtraClick(elementButtons[i]);
             }
+            else if(i >=126 && i<=135){
+                elementButtons[i] = new ImageButton(context);
+                elementButtons[i].setImageResource(getImage(context, elementName));
+                elementButtons[i].setBackgroundResource(0);
+                setButtonClick(i, elementButtons[i]);
+
+            }
+            else if(i >=135 && i<=144){
+                elementButtons[i] = new ImageButton(context);
+                elementButtons[i].setImageResource(getImage(context, elementName));
+                elementButtons[i].setBackgroundResource(0);
+                setButtonClick(i, elementButtons[i]);
+
+            }
              else {
 
                 elementButtons[i] = new ImageButton(context);
@@ -81,7 +95,6 @@ public class createButtons extends Activity {
         }
         return elementButtons;
     }
-
 
     public ImageButton getKey() {
         ImageButton keyButton = new ImageButton(context);
