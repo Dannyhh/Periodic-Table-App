@@ -17,8 +17,8 @@ public class createButtons extends Activity {
         this.context = context;
     }
     public ImageButton[] build() {
-        ImageButton[] elementButtons = new ImageButton[144];
-        for (int i = 0; i <= 125; i++) {
+        ImageButton[] elementButtons = new ImageButton[156];
+        for (int i = 0; i <= 155; i++) {
             String elementName = "image" + i; //the name of the images
             if (i == 0 || i == 17) { // row one
                 elementButtons[i] = new ImageButton(context);
@@ -58,26 +58,28 @@ public class createButtons extends Activity {
             }
                 else if(i==92){
                 String bonusRowOne = "extrarow1";
+                int bonusRowNumber = 1;
                 elementButtons[i] = new ImageButton(context);
                 elementButtons[i].setImageResource(getImage(context, bonusRowOne));
                 elementButtons[i].setBackgroundResource(0);
-                setExtraClick(elementButtons[i]);
+                setExtraClick(elementButtons[i],bonusRowNumber);
             }
             else if(i==110){
                 String bonusRowTwo = "extrarow2";
+                int bonusRowNumber = 2;
                 elementButtons[i] = new ImageButton(context);
                 elementButtons[i].setImageResource(getImage(context, bonusRowTwo));
                 elementButtons[i].setBackgroundResource(0);
-                setExtraClick(elementButtons[i]);
+                setExtraClick(elementButtons[i],bonusRowNumber);
             }
-            else if(i >=126 && i<=135){
+            else if(i >=126 && i<=140){
                 elementButtons[i] = new ImageButton(context);
                 elementButtons[i].setImageResource(getImage(context, elementName));
                 elementButtons[i].setBackgroundResource(0);
                 setButtonClick(i, elementButtons[i]);
 
             }
-            else if(i >=135 && i<=144){
+            else if(i >=141 && i<=155){
                 elementButtons[i] = new ImageButton(context);
                 elementButtons[i].setImageResource(getImage(context, elementName));
                 elementButtons[i].setBackgroundResource(0);
@@ -108,11 +110,12 @@ public class createButtons extends Activity {
                 context.getPackageName());
     }
 
-    private void setExtraClick(ImageButton buttonToSet){
+    private void setExtraClick(ImageButton buttonToSet, final int rowNumber){
         buttonToSet.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent bonusElement = new Intent(context, BonusElements.class);
+                bonusElement.putExtra("rowNum", rowNumber);
                 context.startActivity(bonusElement);
 
             }

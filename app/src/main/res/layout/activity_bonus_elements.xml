@@ -16,11 +16,10 @@
         android:scrollbarAlwaysDrawHorizontalTrack="true">
 
         <TableLayout
-            android:layout_gravity="center"
             android:id="@+id/SmallLayoutTable"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:columnCount="18"
+            android:columnCount="15"
             android:rowCount="2"
             android:stretchColumns="*">
 

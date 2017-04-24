@@ -23,6 +23,7 @@ public class PeriodicTableScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_periodic_table_screen);
+
         TableLayout table = (TableLayout) findViewById(R.id.LayoutTable);
         createButtons newButtons = new createButtons(this);
         tableGen(table, newButtons);

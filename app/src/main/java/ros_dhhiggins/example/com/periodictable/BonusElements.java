@@ -1,6 +1,7 @@
 package ros_dhhiggins.example.com.periodictable;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageButton;
@@ -14,36 +15,42 @@ public class BonusElements extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bonus_elements);
         TableLayout table = (TableLayout) findViewById(R.id.SmallLayoutTable);
-        buildScreen(BonusElements.this, table);
+        Intent recieved = getIntent();
+        int rowNum = recieved.getIntExtra("rowNum", 0);
+        buildScreen(BonusElements.this, table, rowNum);
 
     }
 
-    public void buildScreen(final Activity context,TableLayout table) {
+    public void buildScreen(final Activity context, TableLayout table, int rowNum) {
         createButtons newButtons = new createButtons(context);
         ImageButton[] imageButtons;
         imageButtons = newButtons.build();
 
-        for (int j = 1; j <= 2; j++) {
-            TableRow tempRow = new TableRow(this);
-           /* if (j == 1) {
-                for (int temp = 126; temp <= 135; temp++) {
+            if (rowNum == 1) {
+                TableRow tempRow = new TableRow(this);
+                for (int temp = 126; temp <= 140; temp++) {
                     ImageButton tempButton = imageButtons[temp];
                     tempButton.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT,
                             TableRow.LayoutParams.WRAP_CONTENT));
                     tempButton.setPadding(5, 5, 5, 5);
                     tempRow.addView(tempButton);
                 }
-            /*else {
-                for (int temp = 136; temp <= 144; temp++) {
-                    ImageButton tempButton = buttonArray[temp];
+                table.addView(tempRow, new TableLayout.LayoutParams(TableLayout.LayoutParams.WRAP_CONTENT,
+                        TableLayout.LayoutParams.WRAP_CONTENT));
+            }
+            else if (rowNum == 2) {
+                TableRow tempRowTwo = new TableRow(this);
+                for (int temp = 141; temp <= 155; temp++) {
+                    ImageButton tempButton = imageButtons[temp];
                     tempButton.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT,
                             TableRow.LayoutParams.WRAP_CONTENT));
                     tempButton.setPadding(5, 5, 5, 5);
-                    tempRow.addView(tempButton); */
+                    tempRowTwo.addView(tempButton);
                 }
-
+                table.addView(tempRowTwo, new TableLayout.LayoutParams(TableLayout.LayoutParams.WRAP_CONTENT,
+                        TableLayout.LayoutParams.WRAP_CONTENT));
             }
 
-        }
-   // }
-//}
+    }
+}
+
