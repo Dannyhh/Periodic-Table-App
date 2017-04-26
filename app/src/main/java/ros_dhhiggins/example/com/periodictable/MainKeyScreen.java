@@ -80,7 +80,7 @@ public class MainKeyScreen extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent specificElement = new Intent(context, ElementTypeInfo.class);
-                specificElement.putExtra("elementNumber", i);
+                specificElement.putExtra("typeNumber", i);
                 context.startActivity(specificElement);
 
             }
