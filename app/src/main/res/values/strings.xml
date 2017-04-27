@@ -1,4 +1,6 @@
 <resources>
+
+    <!--main App Strings-->
     <string name="app_name">Periodic Table</string>
     <string name="home">Home Screen</string>
     <string name="periodicTableButton">Periodic Table</string>
@@ -6,6 +8,133 @@
     <string name="Home"> Home </string>
     <string name="Close"> Close </string>
     <string name="mainKeyWelcome"> Welcome, Click any of the buttons to learn more about the type of element</string>
+
+    <!--Element Type Info Strings-->
+    <string-array
+        name="element_type_info">
+        <item
+            >text_string</item>
+    </string-array>
+    <!--Element Info Strings, if the string is simply a number then its a placeholder for
+    an empty space.-->
+    <string-array
+        name="element_info">
+        <item
+            > 1 \n 1.0079 \n Hydrogen \n H \n Nonmetal \n Gas \n -259 \n -253 \n 0.09 \n 1776</item>
+        <item
+            > 1</item>
+        <item
+            > 2</item>
+        <item
+            > 3</item>
+        <item
+            > 4</item>
+        <item
+            > 5</item>
+        <item
+            > 6</item>
+        <item
+            > 7</item>
+        <item
+            > 8</item>
+        <item
+            > 9</item>
+        <item
+            > 10</item>
+        <item
+            > 11</item>
+        <item
+            > 12</item>
+        <item
+            > 13</item>
+        <item
+            > 14</item>
+        <item
+            > 15</item>
+        <item
+            > 16</item>
+        <item
+            > 2 \n 4.0026 \n Helium \n He \n Noble \n Gas \n -272 \n -269 \n 0.18 \n 1895</item>
+        <item
+            > 3 \n 6.941 \n Lithium \n Li \n Alkali \n Solid \n 180 \n 1347 \n 0.53 \n 1817  </item>
+        <item
+            > 4 \n 9.0122 \n Beryllium \n Be \n Alkaline \n Solid \n 1278 \n 2970 \n 1.85 \n 1797</item>
+        <item
+            > 20</item>
+        <item
+            > 21</item>
+        <item
+            > 22</item>
+        <item
+            > 23</item>
+        <item
+            > 24</item>
+        <item
+            > 25</item>
+        <item
+            > 26</item>
+        <item
+            > 27</item>
+        <item
+            > 28</item>
+        <item
+            > 29</item>
+        <item
+            > 5 \n 10.811 \n Boron \n B \n Semi Metal \n  Solid \n 2300 \n 2550 \n 2.34 \n 1808 </item>
+        <item
+            > 6 \n 12.0107 \n Carbon \n C \n Nonmetal \n Solid \n 3500 \n 4827 \n 2.26 \n N/A</item>
+        <item
+            > 7 \n 14.0067 \n Nitrogen \n N \n Nonmetal \n Gas \n -210 \n -196 \n 1.25 \n 1772</item>
+        <item
+            > 8 \n 15.9994 \n Oxygen \n O \n Nonmetal \n Gas \n -218 \n -183 \n 1.43 \n 1774  </item>
+        <item
+            > 9 \n 18.9984 \n Fluorine \n F \n Halogen \n Gas \n -220 \n -188 \n 1.7 \n 1886</item>
+        <item
+            > 10 \n 20.1797 \n Neon \n Ne \n Noble \n Gas \n -249 \n -246 \n 0.9 \n 1898</item>
+        <item
+            > 11 \n 22.9897 \n Sodium \n Na \n Alkali \n Solid \n 98 \n 883 \n 0.97 \n 1807  </item>
+        <item
+            > 12 \n 24.305 \n Magnesium \n Mg \n Alkaline \n Solid \n 639 \n 1090 \n 1.74 \n 755 </item>
+        <item
+            > 38</item>
+        <item
+            > 39</item>
+        <item
+            > 40</item>
+        <item
+            > 41</item>
+        <item
+            > 42</item>
+        <item
+            > 43</item>
+        <item
+            > 44</item>
+        <item
+            > 45</item>
+        <item
+            > 46</item>
+        <item
+            > 47</item>
+        <item
+            > 13 \n 26.9815 \n Aluminum \n Al \n Basic Metal \n Solid \n 660 \n 2467 \n 2.7 \n 1825</item>
+        <item
+            > 14 \n 28.0855 \n Silicon \n Si \n Semi Metal \n Solid \n 1410 \n 2355 \n 2.33 \n 1824 </item>
+        <item
+            > 15 \n 30.9738 \n Phosphorus \n P \n Nonmetal \n Solid \n 44 \n 280 \n 1.82 \n 1669</item>
+        <item
+            > 16 \n 32.065 \n Sulfur \n S \n Nonmetal \n Solid \n 113 \n 445 \n 2.07 \n N/A </item>
+        <item
+            > 17 \n 35.453 \n Chlorine \n Cl \n Halogen \n Gas \n -101 \n -35 \n 3.21 \n 1774</item>
+        <item
+            > 18 \n 39.948 \n Argon \n Ar \n Noble \n Gas \n -189 \n -186 \n 1.78 \n 1894  </item>
+        <item
+            > 54</item> <!--start of line 4-->
+
+
+
+
+    </string-array>
+
 
 
 </resources>
