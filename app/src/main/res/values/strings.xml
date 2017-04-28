@@ -8,6 +8,9 @@
     <string name="Home"> Home </string>
     <string name="Close"> Close </string>
     <string name="mainKeyWelcome"> Welcome, Click any of the buttons to learn more about the type of element</string>
+    <string name="elementInfoOrder">" Atomic Number: \n Atomic Weight: \n Name: \n Atomic Symbol: \n
+        Classification: \n State: \n
+Melting Point (Celcius), Boiling Point (Celcius), Density, Discovery Date (If Known)</string>
 
     <!--Element Type Info Strings-->
     <string-array
@@ -20,7 +23,7 @@
     <string-array
         name="element_info">
         <item
-            > 1 \n 1.0079 \n Hydrogen \n H \n Nonmetal \n Gas \n -259 \n -253 \n 0.09 \n 1776</item>
+            >" 1 \n 1.0079 \n Hydrogen \n H \n Nonmetal \n Gas \n -259 \n -253 \n 0.09 \n 1776"</item>
         <item
             > 1</item>
         <item
@@ -54,11 +57,11 @@
         <item
             > 16</item>
         <item
-            > 2 \n 4.0026 \n Helium \n He \n Noble \n Gas \n -272 \n -269 \n 0.18 \n 1895</item>
+            >" 2 \n 4.0026 \n Helium \n He \n Noble \n Gas \n -272 \n -269 \n 0.18 \n 1895"</item>
         <item
-            > 3 \n 6.941 \n Lithium \n Li \n Alkali \n Solid \n 180 \n 1347 \n 0.53 \n 1817  </item>
+            >" 3 \n 6.941 \n Lithium \n Li \n Alkali \n Solid \n 180 \n 1347 \n 0.53 \n 1817"</item>
         <item
-            > 4 \n 9.0122 \n Beryllium \n Be \n Alkaline \n Solid \n 1278 \n 2970 \n 1.85 \n 1797</item>
+            >" 4 \n 9.0122 \n Beryllium \n Be \n Alkaline \n Solid \n 1278 \n 2970 \n 1.85 \n 1797"</item>
         <item
             > 20</item>
         <item
@@ -80,21 +83,21 @@
         <item
             > 29</item>
         <item
-            > 5 \n 10.811 \n Boron \n B \n Semi Metal \n  Solid \n 2300 \n 2550 \n 2.34 \n 1808 </item>
+            >" 5 \n 10.811 \n Boron \n B \n Semi Metal \n  Solid \n 2300 \n 2550 \n 2.34 \n 1808"</item>
         <item
-            > 6 \n 12.0107 \n Carbon \n C \n Nonmetal \n Solid \n 3500 \n 4827 \n 2.26 \n N/A</item>
+            >" 6 \n 12.0107 \n Carbon \n C \n Nonmetal \n Solid \n 3500 \n 4827 \n 2.26 \n N/A"</item>
         <item
-            > 7 \n 14.0067 \n Nitrogen \n N \n Nonmetal \n Gas \n -210 \n -196 \n 1.25 \n 1772</item>
+            >" 7 \n 14.0067 \n Nitrogen \n N \n Nonmetal \n Gas \n -210 \n -196 \n 1.25 \n 1772"</item>
         <item
-            > 8 \n 15.9994 \n Oxygen \n O \n Nonmetal \n Gas \n -218 \n -183 \n 1.43 \n 1774  </item>
+            >" 8 \n 15.9994 \n Oxygen \n O \n Nonmetal \n Gas \n -218 \n -183 \n 1.43 \n 1774"</item>
         <item
-            > 9 \n 18.9984 \n Fluorine \n F \n Halogen \n Gas \n -220 \n -188 \n 1.7 \n 1886</item>
+            >" 9 \n 18.9984 \n Fluorine \n F \n Halogen \n Gas \n -220 \n -188 \n 1.7 \n 1886"</item>
         <item
-            > 10 \n 20.1797 \n Neon \n Ne \n Noble \n Gas \n -249 \n -246 \n 0.9 \n 1898</item>
+            >" 10 \n 20.1797 \n Neon \n Ne \n Noble \n Gas \n -249 \n -246 \n 0.9 \n 1898"</item>
         <item
-            > 11 \n 22.9897 \n Sodium \n Na \n Alkali \n Solid \n 98 \n 883 \n 0.97 \n 1807  </item>
+            >" 11 \n 22.9897 \n Sodium \n Na \n Alkali \n Solid \n 98 \n 883 \n 0.97 \n 1807"</item>
         <item
-            > 12 \n 24.305 \n Magnesium \n Mg \n Alkaline \n Solid \n 639 \n 1090 \n 1.74 \n 755 </item>
+            >" 12 \n 24.305 \n Magnesium \n Mg \n Alkaline \n Solid \n 639 \n 1090 \n 1.74 \n 755"</item>
         <item
             > 38</item>
         <item
@@ -116,21 +119,89 @@
         <item
             > 47</item>
         <item
-            > 13 \n 26.9815 \n Aluminum \n Al \n Basic Metal \n Solid \n 660 \n 2467 \n 2.7 \n 1825</item>
+            >" 13 \n 26.9815 \n Aluminum \n Al \n Basic Metal \n Solid \n 660 \n 2467 \n 2.7 \n 1825"</item>
         <item
-            > 14 \n 28.0855 \n Silicon \n Si \n Semi Metal \n Solid \n 1410 \n 2355 \n 2.33 \n 1824 </item>
+            >" 14 \n 28.0855 \n Silicon \n Si \n Semi Metal \n Solid \n 1410 \n 2355 \n 2.33 \n 1824"</item>
         <item
-            > 15 \n 30.9738 \n Phosphorus \n P \n Nonmetal \n Solid \n 44 \n 280 \n 1.82 \n 1669</item>
+            >" 15 \n 30.9738 \n Phosphorus \n P \n Nonmetal \n Solid \n 44 \n 280 \n 1.82 \n 1669"</item>
         <item
-            > 16 \n 32.065 \n Sulfur \n S \n Nonmetal \n Solid \n 113 \n 445 \n 2.07 \n N/A </item>
+            >" 16 \n 32.065 \n Sulfur \n S \n Nonmetal \n Solid \n 113 \n 445 \n 2.07 \n N/A"</item>
         <item
-            > 17 \n 35.453 \n Chlorine \n Cl \n Halogen \n Gas \n -101 \n -35 \n 3.21 \n 1774</item>
+            >" 17 \n 35.453 \n Chlorine \n Cl \n Halogen \n Gas \n -101 \n -35 \n 3.21 \n 1774"</item>
         <item
-            > 18 \n 39.948 \n Argon \n Ar \n Noble \n Gas \n -189 \n -186 \n 1.78 \n 1894  </item>
+            >" 18 \n 39.948 \n Argon \n Ar \n Noble \n Gas \n -189 \n -186 \n 1.78 \n 1894"</item>
         <item
-            > 54</item> <!--start of line 4-->
-
-
+            >" 19 \n 39.0983 \n Potassium \n K \n Alkali \n Solid \n 64 \n 774 \n 0.86 \n 1807"</item>
+        <item
+            >" 20 \n 40.078 \n Calcium \n Ca \n Alkaline \n Solid \n 839 \n 1484 \n 1.55 \n 1808"</item>
+        <item
+            >" 21 \n 44.9559 \n Scandium \n Sc \n Transition \n Solid \n 1539 \n 2832 \n 2.99 \n 1879"</item>
+        <item
+            >" 22 \n 47.867 \n Titanium \n Ti \n Transition Metal \n Solid \n 1660 \n 3287 \n 4.54 \n 1791"</item>
+        <item
+            >" 23 \n 50.9415 \n Vanadium \n V \n Transition Metal \n Solid \n 1890 \n 3380 \n 6.11 \n 1830"</item>
+        <item
+            >" 24 \n 51.9961 \n Chromium \n Cr \n Transition Metal \n Solid \n 1857 \n 2672 \n 7.19 \n 1797"</item>
+        <item
+            >" 25 \n 54.938 \n Manganese \n Mn \n Transition Metal \n Solid \n 1245 \n 1962 \n 7.43 \n 1774"</item>
+        <item
+            >" 26 \n 55.845 \n Iron \n Fe \n Transition Metal \n Solid \n 1535 \n 2750 \n 7.87 \n N/A"</item>
+        <item
+            >" 27 \n 58.9332 \n Cobalt \n Co \n Transition Metal \n Solid \n 1495 \n 2870 \n 8.9 \n 1735"</item>
+        <item
+            >" 28 \n 58.6934 \n Nickel \n Ni \n Transition Metal \n Solid \n 1453 \n 2732 \n 8.9 \n 1751"</item>
+        <item
+            >" 29 \n 63.546 \n Copper \n Cu \n Transition Metal \n Solid \n 1083 \n 2567 \n 8.96 \n N/A"</item>
+        <item
+            >" 30 \n 65.39 \n Zinc \n Zn \n Transition Metal \n Solid \n 420 \n 907 \n 7.13 \n N/A"</item>
+        <item
+            >" 31 \n 69.723 \n Gallium \n Ga \n Basic Metal \n Solid \n 30 \n 2403 \n 5.91 \n 1875"</item>
+        <item
+            >" 32 \n 72.64 \n Germanium \n Ge \n Semi Metal \n Solid \n 937 \n 2830 \n 5.32 \n 1886"</item>
+        <item
+            >" 33 \n 74.9216 \n Arsenic \n As \n Semi Metal \n Solid \n 81 \n 613 \n 5.72 \n N/A"</item>
+        <item
+            >" 34 \n 78.96 \n Selenium \n Se \n Nonmetal \n Solid \n 217 \n 685 \n 4.79 \n 1817"</item>
+        <item
+            >" 35 \n 79.904 \n Bromine \n Br \n Halogen \n Liquid \n -7 \n 59 \n 3.12 \n 1826"</item>
+        <item
+            >" 36 \n 83.8 \n Krypton \n Kr \n Noble \n Gas \n -157 \n -153 \n 3.75 \n 1898"</item>
+        <item
+            >" 37 \n 85.4678 \n Rubidium \n Rb \n Alkali \n Solid \n 39 \n 688 \n 1.63 \n 1861"</item>
+        <item
+            >" 38 \n 87.62 \n Strontium \n Sr \n Alkaline \n Solid \n 769 \n 1384 \n 2.54 \n 1790"</item>
+        <item
+            >" 39 \n 88.9059 \n Yttrium \n Y \n Transition Metal \n Solid \n 1523 \n 3337 \n 4.47 \n 1794"</item>
+        <item
+            >" 40 \n 91.224 \n Zirconium \n Zr \n Transition Metal \n Solid \n 1852 \n 4377 \n 6.51 \n 1789"</item>
+        <item
+            >" 41 \n 92.9064 \n Niobium \n Nb \n Transition Metal \n Solid \n 2468 \n 4927 \n 8.57 \n 1801"</item>
+        <item
+            >" 42 \n 95.94 \n Molybdenum \n Mo \n Transition Metal \n Solid \n 2617 \n 4612 \n 10.22 \n 1781"</item>
+        <item
+            >" 43 \n 98.0 \n Technetium \n Tc \n Transition Metal \n 2200 \n Solid \n 4877 \n 11.5 \n 1937"</item>
+        <item
+            >" 44 \n 101.07 \n Ruthenium \n Ru \n Transition Metal \n Solid \n 2250 \n 3900 \n 12.37 \n 1844"</item>
+        <item
+            >" 45 \n 102.9055 \n Rhodium \n Rh \n Transition Metal \n  Solid \n 1966 \n 3727 \n 12.41 \n 1803"</item>
+        <item
+            >" 46 \n 106.42 \n Palladium \n Pd \n Transition Metal \n Solid \n 1552 \n 2927 \n 12.02 \n 1803"</item>
+        <item
+            >" 47 \n 107.8682 \n Silver \n Ag \n Transition Metal \n Solid \n 962 \n 2212 \n 10.5 \n N/A"</item>
+        <item
+            >" 48 \n 112.411 \n Cadmium \n Cd \n Transition Metal \n Solid \n 321 \n 765 \n 8.65 \n 1817 "</item>
+        <item
+            >" 49 \n 114.818 \n Indium \n In \n Basic Metal \n Solid \n 157 \n 2000 \n 7.31 \n 1863"</item>
+        <item
+            >" 50 \n 118.71 \n Tin \n Sn \n Basic Metal \n Solid \n 232 \n 2270 \n 7.31 \n N/A"</item>
+        <item
+            >" 51 \n 121.76 \n Antimony \n Sb \n Semi Metal \n Solid \n 630 \n 1750 \n 6.68 \n N/A"</item>
+        <item
+            >" 52 \n 127.6 \n Tellurium \n Te \n Semi Metal \n Solid \n 449 \n 990 \n 6.24 \n 1783"</item>
+        <item
+            >" 53 \n 126.9045 \n Iodine \n I \n Halogen \n Solid \n 114 \n 184 \n 4.93 \n 1811"</item>
+        <item
+            >" 54 \n 131.293 \n Xenon \n Xe \n Noble \n Solid \n Gas \n -112 \n -108 \n 5.9 \n 1898"</item>
 
 
     </string-array>
