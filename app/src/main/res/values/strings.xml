@@ -304,12 +304,36 @@
             >" 70 \n 173.04 \n Ytterbium \n Yb \n Lanthanide \n Solid \n 824 \n 1466 \n 6.9 \n 1878"</item>
         <item
             >" 71 \n 174.967 \n Lutetium \n Lu \n Lanthanide \n Solid \n 1656 \n 3315 \n 9.84 \n 1907"</item>
-
-
-
-
-
-
+        <item
+            >" ELEMENT 89 THROUGH 103 BEGINS HERE"</item>\
+        <item
+            >" "</item>
+        <item
+            >" "</item>
+        <item
+            >" "</item>
+        <item
+            >" "</item>
+        <item
+            >" "</item>
+        <item
+            >" "</item>
+        <item
+            >" "</item>
+        <item
+            >" "</item>
+        <item
+            >" "</item>
+        <item
+            >" "</item>
+        <item
+            >" "</item>
+        <item
+            >" "</item>
+        <item
+            >" "</item>
+        <item
+            >" "</item>
 
     </string-array>
 
