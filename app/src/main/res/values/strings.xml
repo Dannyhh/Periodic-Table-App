@@ -8,9 +8,9 @@
     <string name="Home"> Home </string>
     <string name="Close"> Close </string>
     <string name="mainKeyWelcome"> Welcome, Click any of the buttons to learn more about the type of element</string>
-    <string name="elementInfoOrder">" Atomic Number: \n Atomic Weight: \n Name: \n Atomic Symbol: \n
-        Classification: \n State: \n
-Melting Point (Celcius), Boiling Point (Celcius), Density, Discovery Date (If Known)</string>
+    <string name="elementInfoOrder">" Atomic Number: \n Atomic Weight: \n Name: \n Atomic Symbol: \n"
+        "Classification: \n State: \n Melting Point: (Celsius) \n Boiling Point (Celsius): \n Density:"
+        " \n Discovery Date (If Known): "</string>
 
     <!--Element Type Info Strings-->
     <string-array
@@ -202,6 +202,82 @@ Melting Point (Celcius), Boiling Point (Celcius), Density, Discovery Date (If Kn
             >" 53 \n 126.9045 \n Iodine \n I \n Halogen \n Solid \n 114 \n 184 \n 4.93 \n 1811"</item>
         <item
             >" 54 \n 131.293 \n Xenon \n Xe \n Noble \n Solid \n Gas \n -112 \n -108 \n 5.9 \n 1898"</item>
+        <item
+            >" 55 \n 132.9055 \n Cesium \n Cs \n Alkali \n Solid \n 29 \n 678 \n 1.87 \n 1860"</item>
+        <item
+            >" 56 \n 137.327 \n Barium \n Ba \n Alkaline \n Solid \n 725 \n 1140 \n 3.59 \n 1808"</item>
+        <item
+            >" 92"</item>
+        <item
+            >" 72 \n 178.49 \n Hafnium \n Hf \n Transition Metal \n Solid \n 2150 \n 5400 \n 13.31 \n 1923"</item>
+        <item
+            >" 73 \n 180.9479 \n Tantalum \n Ta \n Transition Metal \n Solid \n 2996 \n 5425 \n 16.65 \n 1802 "</item>
+        <item
+            >" 74 \n 183.84 \n Tungsten \n W \n Transition Metal \n Solid \n 3410 \n 5660 \n 19.35 \n 1783"</item>
+        <item
+            >" 75 \n 186.207 \n Rhenium \n Re \n Transition Metal \n Solid \n 3180 \n 5627 \n 21.04 \n 1925"</item>
+        <item
+            >" 76 \n 190.23 \n Osmium \n Os \n Transition Metal \n Solid \n 3045 \n 5027 \n 22.6 \n 1803"</item>
+        <item
+            >" 77 \n 192.217 \n Iridium \n Ir \n Transition Metal \n Solid \n 2410 \n 4527 \n 22.4 \n 1803"</item>
+        <item
+            >" 78 \n 195.078 \n Platinum \n Pt \n Transition Metal \n Solid \n 1772 \n 3827 \n 21.45 \n 1735"</item>
+        <item
+            >" 79 \n 196.9665 \n Gold \n Au \n Transition Metal \n Solid \n 1064 \n 2807 \n 19.32 \n N/A"</item>
+        <item
+            >" 80 \n 200.59 \n Mercury \n Hg \n Transition Metal \n Liquid \n -39 \n 357 \n 13.55 \n N/A"</item>
+        <item
+            >" 81 \n 204.3833 \n Thallium \n Tl \n Basic Metal \n Solid \n 303 \n 1457 \n 11.85 \n 1861"</item>
+        <item
+            >" 82 \n 207.2 \n Lead \n Pb \n Basic Metal \n Solid \n 327 \n 1740 \n 11.35 \n N/A"</item>
+        <item
+            >" 83 \n 208.9804 \n Bismuth \n Bi \n Basic Metal \n Solid \n 271 \n 1560 \n 9.75 \n N/A"</item>
+        <item
+            >" 84 \n 209.0 \n Polonium \n Po \n Semi Metal \n Solid \n 254 \n 962 \n 9.3 \n 1898"</item>
+        <item
+            >" 85 \n 210.0 \n Astatine \n At \n Halogen \n Solid \n 302 \n 337 \n N/A \n 1940"</item>
+        <item
+            >" 86 \n 222.0 \n Radon \n Rn \n Noble \n Gas \n -71 \n -62 \n 9.73 \n 1900"</item>
+        <item
+            >" 87 \n 223.0 \n Francium \n Fr \n Alkali \n Solid \n 27 \n 677 \n 1.87 \n 1939"</item>
+        <item
+            >" 88 \n 226.0 \n Radium \n Ra \n Alkaline \n Solid \n 700 \n 1737 \n 5.5 \n 1898"</item>
+        <item
+            >" 110"</item>
+        <item
+            >" 104 \n 261.0 \n Rutherfordium \n Rf \n Transition Metal \n Solid \n 2100 \n 5500 \n 23.2 \n 1964"</item>
+        <item
+            >" 105 \n 262.0 \n Dubnium \n Db \n Transition Metal \n Solid \n N/A \n N/A \n 29.3 \n 1967"</item>
+        <item
+            >" 106 \n 266.0 \n Seaborgium \n Sg \n Transition Metal \n Solid \n N/A \n N/A \n 35.0 \n 1974"</item>
+        <item
+            >" 107 \n 264.0 \n Bohrium \n Bh \n Transition Metal \n Solid \n N/A \n N/A \n N/A \n 1981"</item>
+        <item
+            >" 108 \n 277.0 \n Hassium \n Hs \n Transition Metal \n Solid \n N/A \n N/A \n 41.0 \n 1984"</item>
+        <item
+            >" 109 \n 268.0 \n Meitnerium \n Mt \n Transition Metal \n Solid \n N/A \n N/A \n 37.4 \n 1982"</item>
+        <item
+            >" 110 \n 271.0 \n Darmstadtium \n Ds \n Transition Metal \n Solid \n N/A \n N/A \n N/A \n 1994"</item>
+        <item
+            >" 111 \n 272.0 \n Roentgenium \n Rg \n Transition Metal \n Solid \n N/A \n N/A \n N/A \n 1994"</item>
+        <item
+            >" 112 \n 285.0 \n Copernicium \n Cn \n Transition Metal \n Solid \n N/A \n N/A \n N/A \n 1996"</item>
+        <item
+            >" 113 \n 284.0 \n Nihonium \n Nh \n Basic Metal \n Solid \n N/A \n N/A \n N/A \n 2003"</item>
+        <item
+            >" 114 \n 289.0 \n Flerovium \n Fl \n Basic Metal \n Solid \n N/A \n N/A \n N/A \n 1998 "</item>
+        <item
+            >" 115 \n 288.0 \n Mascovium \n Mc \n Basic \n Solid \n N/A \n N/A \n N/A \n 2003"</item>
+        <item
+            >" 116 \n 292.0 \n Livermorium \n Lv \n Basic Metal \n Solid \n N/A \n N/A \n N/A \n 2000"</item>
+        <item
+            >" 117 \n 294.0 \n Tennessine \n Ts \n Halogen \n Solid \n N/A \n N/A \n N/A \n 2010"</item>
+        <item
+            >" 118 \n 294.0 \n Oganesson \n Og \n Noble \n Solid \n N/A \n N/A \n N/A \n 2006"</item>
+
+
+
+
 
 
     </string-array>
