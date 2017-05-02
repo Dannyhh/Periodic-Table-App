@@ -305,35 +305,35 @@
         <item
             >" 71 \n 174.967 \n Lutetium \n Lu \n Lanthanide \n Solid \n 1656 \n 3315 \n 9.84 \n 1907"</item>
         <item
-            >" ELEMENT 89 THROUGH 103 BEGINS HERE"</item>\
+            >" 89 \n 227.0 \n Actinium \n Ac \n Actinide \n Solid \n 1050 \n 3200 \n 10.07 \n 1899"</item>\
         <item
-            >" "</item>
+            >" 90 \n 232.0381 \n Thorium \n Th \n Actinide \n Solid \n 1750 \n 4790 \n 11.72 \n 1829"</item>
         <item
-            >" "</item>
+            >" 91 \n 231.0359 \n Protactinium \n Pa \n Actinide \n Solid \n 1568 \n 4027 \n 15.4 \n 1917"</item>
         <item
-            >" "</item>
+            >" 92 \n 238.0289 \n Uranium \n U \n Actinide \n Solid \n 1132 \n 3818 \n 18.95 \n 1789"</item>
         <item
-            >" "</item>
+            >" 93 \n 237.0 \n Neptunium \n Np \n Actinide \n Solid \n 640 \n 3902 \n 20.2 \n 1940"</item>
         <item
-            >" "</item>
+            >" 94 \n 244.0 \n Plutonium \n Pu \n Actinide \n Solid \n 640 \n 3235 \n 19.84 \n 1940"</item>
         <item
-            >" "</item>
+            >" 95 \n 243.0 \n Americium \n Am \n Actinide \n Solid \n 994 \n 2607 \n 13.67 \n 1944"</item>
         <item
-            >" "</item>
+            >" 96 \n 247.0 \n Curium \n Cm \n Actinide \n Solid \n 1347 \n 3110 \n 13.5 \n 1944"</item>
         <item
-            >" "</item>
+            >" 97 \n 247.0 \n Berkelium \n Bk \n Actinide \n Solid \n 986 \n 710 \n 14.78 \n 1949"</item>
         <item
-            >" "</item>
+            >" 98 \n 251.0 \n Californium \n Cf \n Actinide \n Solid \n 899 \n 1472 \n 15.1 \n 1950"</item>
         <item
-            >" "</item>
+            >" 99 \n 252.0 \n Einsteinium \n Es \n Actinide \n Solid \n 860 \n N/A \n N/A \n 1952"</item>
         <item
-            >" "</item>
+            >" 100 \n 257.0 \n Fermium \n Fm \n Actinide \n Solid \n 1527 \n N/A \n 8.44 \n 1952"</item>
         <item
-            >" "</item>
+            >" 101 \n 258.0 \n Mendelevium \n Md \n Actinide \n Solid \n 827 \n N/A \n N/A \n 1955"</item>
         <item
-            >" "</item>
+            >" 102 \n 259.0 \n Nobelium \n No \n Actinide \n Solid \n 827 \n N/A \n N/A \n 1958"</item>
         <item
-            >" "</item>
+            >" 103 \n 262.0 \n Lawrencium \n Lr \n Actinide \n Solid \n 1627 \n N/A \n N/A \n 1961"</item>
 
     </string-array>
 
