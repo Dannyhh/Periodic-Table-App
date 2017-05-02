@@ -16,7 +16,11 @@
     <string-array
         name="element_type_info">
         <item
-            >text_string</item>
+            >The Actinide category of elements is defined by high instability and radioactivity.
+                Elements 89 to 103 fall under this category.</item>
+
+
+
     </string-array>
     <!--Element Info Strings, if the string is simply a number then its a placeholder for
     an empty space.-->
@@ -336,7 +340,5 @@
             >" 103 \n 262.0 \n Lawrencium \n Lr \n Actinide \n Solid \n 1627 \n N/A \n N/A \n 1961"</item>
 
     </string-array>
-
-
 
 </resources>

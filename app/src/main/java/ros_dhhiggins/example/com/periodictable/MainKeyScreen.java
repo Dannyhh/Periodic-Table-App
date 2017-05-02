@@ -79,9 +79,6 @@ public class MainKeyScreen extends AppCompatActivity {
         buttonToSet.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent specificElement = new Intent(context, ElementTypeInfo.class);
-                specificElement.putExtra("typeNumber", i);
-                context.startActivity(specificElement);
 
             }
         });
