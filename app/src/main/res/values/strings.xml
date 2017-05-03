@@ -19,23 +19,23 @@
             >"The Actinide category of elements is defined by high instability and radioactivity.
                 Elements 89 to 103 fall under this category."</item>
         <item
-            >2</item>
+            >The Alkali category</item>
         <item
-            >3</item>
+            >The Alkaline category</item>
         <item
-            >4</item>
+            >The Basic Metals</item>
         <item
-            >5</item>
+            >The Halogen category</item>
         <item
-            >6</item>
+            >The Lanthanide category</item>
         <item
-            >7</item>
+            >The Noble Gasses</item>
         <item
-            >8</item>
+            >The group known as Non Metals</item>
         <item
-            >9</item>
+            >Semi Metals are a group of elements</item>
         <item
-            >10</item>
+            >Transition Metals</item>
     </string-array>
 
     <!--Element Info Strings, if the string is simply a number then its a placeholder for
