@@ -125,6 +125,7 @@ public class PeriodicTableScreen extends AppCompatActivity {
         View layout = layoutInflater.inflate(R.layout.key_popup_layout, viewGroup);
         final PopupWindow popup = new PopupWindow(context);
         popup.setContentView(layout);
+
         popup.setWidth(WRAP_CONTENT);
         popup.setHeight(WRAP_CONTENT);
         popup.setFocusable(true);

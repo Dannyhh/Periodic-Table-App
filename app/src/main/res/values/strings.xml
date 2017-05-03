@@ -16,12 +16,28 @@
     <string-array
         name="element_type_info">
         <item
-            >The Actinide category of elements is defined by high instability and radioactivity.
-                Elements 89 to 103 fall under this category.</item>
-
-
-
+            >"The Actinide category of elements is defined by high instability and radioactivity.
+                Elements 89 to 103 fall under this category."</item>
+        <item
+            >2</item>
+        <item
+            >3</item>
+        <item
+            >4</item>
+        <item
+            >5</item>
+        <item
+            >6</item>
+        <item
+            >7</item>
+        <item
+            >8</item>
+        <item
+            >9</item>
+        <item
+            >10</item>
     </string-array>
+
     <!--Element Info Strings, if the string is simply a number then its a placeholder for
     an empty space.-->
     <string-array

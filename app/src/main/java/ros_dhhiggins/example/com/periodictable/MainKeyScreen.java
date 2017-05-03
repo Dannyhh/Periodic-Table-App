@@ -3,15 +3,26 @@ package ros_dhhiggins.example.com.periodictable;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.Resources;
+import android.graphics.Point;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
+import android.widget.PopupWindow;
 import android.widget.TableLayout;
 import android.widget.TableRow;
+import android.widget.TextView;
+
+import static android.view.ViewGroup.LayoutParams.WRAP_CONTENT;
 
 public class MainKeyScreen extends AppCompatActivity {
-
+    private Point p;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_key_screen);
@@ -38,7 +49,7 @@ public class MainKeyScreen extends AppCompatActivity {
             keyButtons[i] = new ImageButton(context);
             keyButtons[i].setImageResource(getImage(context, keyNames[i]));
             keyButtons[i].setBackgroundResource(0);
-            setButtonClick(i, keyButtons[i], context);
+            setButtonClick(i, keyButtons[i]);
         }
         for (int j = 1; j <= 5; j++) {
             TableRow tempRow = new TableRow(this);
@@ -75,17 +86,63 @@ public class MainKeyScreen extends AppCompatActivity {
                 context.getPackageName());
     }
 
-    private void setButtonClick(final int i, ImageButton buttonToSet,final Activity context) {
-        buttonToSet.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+    private void setButtonClick(final int i, final ImageButton buttonToSet) {
+                int[] location = new int[2];
+                buttonToSet.getLocationOnScreen(location);
+                p = new Point();
+                p.x = location[0];
+                p.y = location[1];
+                buttonToSet.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View arg0) {
+                            showPopup(MainKeyScreen.this, p,i);
 
+                    }
+                });
             }
-        });
-    }
+
 
     public void goBack(View view){
-        Intent back = new Intent(this, MainActivity.class);
+        Intent back = new Intent(MainKeyScreen.this, MainActivity.class);
         startActivity(back);
     }
-}
+
+    private void showPopup(final Activity context, Point p, int buttonClicked) {
+        Resources res = getResources();
+        String[] elementInfo = res.getStringArray(R.array.element_type_info);
+        LayoutInflater inflater = (LayoutInflater) this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        View layout = inflater.inflate(R.layout.key_info_popup, (ViewGroup) findViewById(R.id.info_popup_group), false);
+        final PopupWindow pwindo = new PopupWindow(layout, ViewGroup.LayoutParams.WRAP_CONTENT,
+                ViewGroup.LayoutParams.WRAP_CONTENT, true);
+        pwindo.setWidth(WRAP_CONTENT);
+        pwindo.setHeight(WRAP_CONTENT);
+        pwindo.setFocusable(true);
+        pwindo.setOutsideTouchable(true);
+        int OFFSET_X = 300;
+        int OFFSET_Y = 100;
+        pwindo.showAtLocation(layout, Gravity.CENTER_HORIZONTAL,0,0);
+
+        //set the textView
+        TextView txt = (TextView) layout.findViewById(R.id.type_info);
+        for(int j=0; j<=12; j++){
+            if(buttonClicked == j){
+                txt.setText(elementInfo[j]);
+            }
+        }
+        Button btnClosePopup = (Button) layout.findViewById(R.id.close);
+        btnClosePopup.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                pwindo.dismiss();
+            }
+        });
+
+    }
+
+
+    }
+
+
+
+
+
+
