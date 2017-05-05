@@ -34,7 +34,9 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".MainKeyScreen">
+        <activity
+            android:label="@string/elementTypeTitle"
+            android:name=".MainKeyScreen">
             <intent-filter>
                 <action android:name="android.intent.action.SEND" />
 

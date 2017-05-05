@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:textColor="@color/white"
         android:textSize="25sp"
-        android:textAlignment="center"/>
+        android:gravity="center"/>
 
     <Button
         android:id="@+id/close"
