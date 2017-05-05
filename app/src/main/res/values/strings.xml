@@ -11,19 +11,27 @@
     <string name="elementInfoOrder">" Atomic Number: \n Atomic Weight: \n Name: \n Atomic Symbol: \n"
         "Classification: \n State: \n Melting Point: (Celsius) \n Boiling Point (Celsius): \n Density:"
         " \n Discovery Date (If Known): "</string>
+    <string name="elementTypeTitle"> Element Key</string>
 
     <!--Element Type Info Strings-->
     <string-array
         name="element_type_info">
         <item
-            >"The Actinide category of elements is defined by high instability and radioactivity.
-                Elements 89 to 103 fall under this category."</item>
+            >"The Actinide category of elements is defined by high \n instability and radioactivity.
+            Elements 89 to 103 fall under this category.
+            The most well known of these elements \n include Uranium and Plutonium"</item>
         <item
-            >The Alkali category</item>
+            >"The Alkali category consists of many different basic ionic salts.
+            They are commonly used in compounds like \n Sodium Hydroxide and other similar chemicals.
+            This group contains elements \n 3, 11, 19, 37, 55, and 87 "</item>
         <item
-            >The Alkaline category</item>
+            >"The Alkaline category consists of 6 chemical elements.
+            All six are shiny, have a silvery-white appearance and are \n somewhat reactive at standard temp and pressure.
+            Consists of elements \n 4, 12, 20, 38, 56, and 88."
+        </item>
         <item
-            >The Basic Metals</item>
+            >"The Basic Metals refer to the most commonly found metals.
+        </item>
         <item
             >The Halogen category</item>
         <item
