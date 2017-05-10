@@ -24,9 +24,9 @@ public class SpecificElement extends AppCompatActivity {
         String[] elementInfo = res.getStringArray(R.array.element_info);
 
         for(int i=0; i<=155; i++){
-           if(i ==arrayNumber){
-               text.setText(elementInfo[i]);
-           }
+            if(i ==arrayNumber){
+                text.setText(elementInfo[i]);
+            }
         }
     }
 }

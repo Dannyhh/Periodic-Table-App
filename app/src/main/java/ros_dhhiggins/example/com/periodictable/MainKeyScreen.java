@@ -13,7 +13,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 import android.widget.TableLayout;
 import android.widget.TableRow;
@@ -87,19 +86,19 @@ public class MainKeyScreen extends AppCompatActivity {
     }
 
     private void setButtonClick(final int i, final ImageButton buttonToSet) {
-                int[] location = new int[2];
-                buttonToSet.getLocationOnScreen(location);
-                p = new Point();
-                p.x = location[0];
-                p.y = location[1];
-                buttonToSet.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View arg0) {
-                            showPopup(MainKeyScreen.this, p,i);
+        int[] location = new int[2];
+        buttonToSet.getLocationOnScreen(location);
+        p = new Point();
+        p.x = location[0];
+        p.y = location[1];
+        buttonToSet.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+                showPopup(MainKeyScreen.this, p,i);
 
-                    }
-                });
             }
+        });
+    }
 
 
     public void goBack(View view){
@@ -139,7 +138,7 @@ public class MainKeyScreen extends AppCompatActivity {
     }
 
 
-    }
+}
 
 
 

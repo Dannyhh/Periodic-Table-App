@@ -56,7 +56,7 @@ public class createButtons extends Activity {
                 elementButtons[i].setBackgroundResource(0);
                 setButtonClick(i, elementButtons[i]);
             }
-                else if(i==92){
+            else if(i==92){
                 String bonusRowOne = "extrarow1";
                 int bonusRowNumber = 1;
                 elementButtons[i] = new ImageButton(context);
@@ -86,7 +86,7 @@ public class createButtons extends Activity {
                 setButtonClick(i, elementButtons[i]);
 
             }
-             else {
+            else {
 
                 elementButtons[i] = new ImageButton(context);
                 elementButtons[i].setImageResource(getImage(context, "blank"));

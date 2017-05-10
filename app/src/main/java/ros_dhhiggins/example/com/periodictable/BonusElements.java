@@ -26,30 +26,30 @@ public class BonusElements extends AppCompatActivity {
         ImageButton[] imageButtons;
         imageButtons = newButtons.build();
 
-            if (rowNum == 1) {
-                TableRow tempRow = new TableRow(this);
-                for (int temp = 126; temp <= 140; temp++) {
-                    ImageButton tempButton = imageButtons[temp];
-                    tempButton.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT,
-                            TableRow.LayoutParams.WRAP_CONTENT));
-                    tempButton.setPadding(5, 5, 5, 5);
-                    tempRow.addView(tempButton);
-                }
-                table.addView(tempRow, new TableLayout.LayoutParams(TableLayout.LayoutParams.WRAP_CONTENT,
-                        TableLayout.LayoutParams.WRAP_CONTENT));
+        if (rowNum == 1) {
+            TableRow tempRow = new TableRow(this);
+            for (int temp = 126; temp <= 140; temp++) {
+                ImageButton tempButton = imageButtons[temp];
+                tempButton.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT,
+                        TableRow.LayoutParams.WRAP_CONTENT));
+                tempButton.setPadding(5, 5, 5, 5);
+                tempRow.addView(tempButton);
             }
-            else if (rowNum == 2) {
-                TableRow tempRowTwo = new TableRow(this);
-                for (int temp = 141; temp <= 155; temp++) {
-                    ImageButton tempButton = imageButtons[temp];
-                    tempButton.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT,
-                            TableRow.LayoutParams.WRAP_CONTENT));
-                    tempButton.setPadding(5, 5, 5, 5);
-                    tempRowTwo.addView(tempButton);
-                }
-                table.addView(tempRowTwo, new TableLayout.LayoutParams(TableLayout.LayoutParams.WRAP_CONTENT,
-                        TableLayout.LayoutParams.WRAP_CONTENT));
+            table.addView(tempRow, new TableLayout.LayoutParams(TableLayout.LayoutParams.WRAP_CONTENT,
+                    TableLayout.LayoutParams.WRAP_CONTENT));
+        }
+        else if (rowNum == 2) {
+            TableRow tempRowTwo = new TableRow(this);
+            for (int temp = 141; temp <= 155; temp++) {
+                ImageButton tempButton = imageButtons[temp];
+                tempButton.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT,
+                        TableRow.LayoutParams.WRAP_CONTENT));
+                tempButton.setPadding(5, 5, 5, 5);
+                tempRowTwo.addView(tempButton);
             }
+            table.addView(tempRowTwo, new TableLayout.LayoutParams(TableLayout.LayoutParams.WRAP_CONTENT,
+                    TableLayout.LayoutParams.WRAP_CONTENT));
+        }
 
     }
 }

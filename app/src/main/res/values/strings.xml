@@ -27,23 +27,34 @@
         <item
             >"The Alkaline category consists of 6 chemical elements.
             All six are shiny, have a silvery-white appearance and are \n somewhat reactive at standard temp and pressure.
-            Consists of elements \n 4, 12, 20, 38, 56, and 88."
-        </item>
+            Consists of elements \n 4, 12, 20, 38, 56, and 88."</item>
         <item
-            >"The Basic Metals refer to the most commonly found metals.
-        </item>
+            >"The Basic Metals refer to the most common and some of the more commonly used metals.
+            Located to the right of the transition metals this category includes elements such as:
+            Lead, Aluminium, and Silicon"</item>
         <item
-            >The Halogen category</item>
+            >"The Halogen category is unique. It is the only category with elements in 3 of the 4
+        states of matter at standard Temperature and Pressure. It consists of the elements in the 17th column."</item>
         <item
-            >The Lanthanide category</item>
+            >"The Lanthanide category, also known as the rare earth metals, consists of elements
+        57 through 71. These elements are typically shown in there own row however this is only
+        for aesthetic purposes."</item>
         <item
-            >The Noble Gasses</item>
+            >"The Noble Gasses are known for their colorless and low reactivity under standard
+        temperature and pressure. They are located in column 18 and have very low melting and boiling points"</item>
         <item
-            >The group known as Non Metals</item>
+            >"The group known as Non Metal category is characterized by there high volatility and
+        lack of metal properties. They are sometimes grouped with Semi Metals and are loctated to the
+        right of the Noble Gases"</item>
         <item
-            >Semi Metals are a group of elements</item>
+            >"Semi Metals are a group of elements are charecterized by having many metallic properties
+        but not enough to be classified as full metals, but they are closer to metals than those elements
+        in the non-metal category."</item>
         <item
-            >Transition Metals</item>
+            >"Transition Metals make up the main central block of the periodic table. They are characterized by
+        metallic properties including high melting and boiling points as well as high density. Perhaps
+        one of the more unique elements is Mercury which is liquid at room temperature, despite being a
+        dense metal."</item>
     </string-array>
 
     <!--Element Info Strings, if the string is simply a number then its a placeholder for
