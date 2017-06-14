@@ -3,7 +3,7 @@
 
 A Periodic table app based on my project from last year, allowing the user to learn about the elements.
 
-To Compile use android studio 3.0, or the included apk if you wish to just use the app.
+To Compile use android studio 2.3, or the included apk if you wish to just use the app.
 
 Roosevelt High School CS Projects 2016-2017 (Semester 2)
 
