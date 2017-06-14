@@ -1,3 +1,8 @@
+/*
+ * Created by Danny Higgins on 3/16/2017.
+ * This class creates the main key page to learn about types of elements
+ */
+
 package ros_dhhiggins.example.com.periodictable;
 
 import android.app.Activity;
@@ -20,7 +25,7 @@ import android.widget.TextView;
 
 import static android.view.ViewGroup.LayoutParams.WRAP_CONTENT;
 
-public class MainKeyScreen extends AppCompatActivity {
+public class MainKeyScreen extends AppCompatActivity { //creates the screen
     private Point p;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,7 +34,7 @@ public class MainKeyScreen extends AppCompatActivity {
         genButtons(MainKeyScreen.this,mainGrid);
     }
 
-
+    //the following method creates the buttons for the main screen
     public void genButtons(final Activity context,TableLayout mainGrid ){
         ImageButton[] keyButtons = new ImageButton[10];
         String[] keyNames = new String[10];
@@ -79,12 +84,13 @@ public class MainKeyScreen extends AppCompatActivity {
         }
     }
 
-
+    //the following method gets the images for the buttons
     private static int getImage(Context context, String name) {
         return context.getResources().getIdentifier(name, "drawable",
                 context.getPackageName());
     }
 
+    //the following method sets the onClick for the buttons
     private void setButtonClick(final int i, final ImageButton buttonToSet) {
         int[] location = new int[2];
         buttonToSet.getLocationOnScreen(location);
@@ -94,19 +100,20 @@ public class MainKeyScreen extends AppCompatActivity {
         buttonToSet.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
-                showPopup(MainKeyScreen.this, p,i);
+                showPopup(i);
 
             }
         });
     }
 
-
+    //the following method creates the onClick for the back button
     public void goBack(View view){
         Intent back = new Intent(MainKeyScreen.this, MainActivity.class);
         startActivity(back);
     }
 
-    private void showPopup(final Activity context, Point p, int buttonClicked) {
+    //the following method creates the popup
+    private void showPopup(int buttonClicked) {
         Resources res = getResources();
         String[] elementInfo = res.getStringArray(R.array.element_type_info);
         LayoutInflater inflater = (LayoutInflater) this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -117,10 +124,7 @@ public class MainKeyScreen extends AppCompatActivity {
         pwindo.setHeight(WRAP_CONTENT);
         pwindo.setFocusable(true);
         pwindo.setOutsideTouchable(true);
-        int OFFSET_X = 300;
-        int OFFSET_Y = 100;
         pwindo.showAtLocation(layout, Gravity.CENTER_HORIZONTAL,0,0);
-
         //set the textView
         TextView txt = (TextView) layout.findViewById(R.id.type_info);
         for(int j=0; j<=12; j++){

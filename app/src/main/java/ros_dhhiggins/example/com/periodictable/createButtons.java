@@ -1,21 +1,20 @@
-package ros_dhhiggins.example.com.periodictable;
+/*
+ * Created by Danny Higgins on 3/16/2017.
+ * This class creates all of the buttons used in the gridLayout for the periodic table
+ */
 
+package ros_dhhiggins.example.com.periodictable;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.view.View;
 import android.widget.ImageButton;
-
-
-/**
- * Created by Danny Higgins on 3/16/2017.
- * This class creates all of the buttons used in the gridLayout for the periodic table
- */
 public class createButtons extends Activity {
     private Context context;
     createButtons(Context context) {
         this.context = context;
-    }
+    }//gets the context of the activity
+
     public ImageButton[] build() {
         ImageButton[] elementButtons = new ImageButton[156];
         for (int i = 0; i <= 155; i++) {
@@ -50,14 +49,14 @@ public class createButtons extends Activity {
                 elementButtons[i].setImageResource(getImage(context, elementName));
                 elementButtons[i].setBackgroundResource(0);
                 setButtonClick(i, elementButtons[i]);
-            } else if (i == 108 || i == 109 || (i >= 111 && i <= 125)) { //row 6 without extra chunk
+            } else if (i == 108 || i == 109 || (i >= 111 && i <= 125)) { //row 7 without extra chunk
                 elementButtons[i] = new ImageButton(context);
                 elementButtons[i].setImageResource(getImage(context, elementName));
                 elementButtons[i].setBackgroundResource(0);
                 setButtonClick(i, elementButtons[i]);
             }
             else if(i==92){
-                String bonusRowOne = "extrarow1";
+                String bonusRowOne = "extrarow1";//creates the extra row 1 button
                 int bonusRowNumber = 1;
                 elementButtons[i] = new ImageButton(context);
                 elementButtons[i].setImageResource(getImage(context, bonusRowOne));
@@ -65,21 +64,21 @@ public class createButtons extends Activity {
                 setExtraClick(elementButtons[i],bonusRowNumber);
             }
             else if(i==110){
-                String bonusRowTwo = "extrarow2";
+                String bonusRowTwo = "extrarow2"; //extra row 2 button
                 int bonusRowNumber = 2;
                 elementButtons[i] = new ImageButton(context);
                 elementButtons[i].setImageResource(getImage(context, bonusRowTwo));
                 elementButtons[i].setBackgroundResource(0);
                 setExtraClick(elementButtons[i],bonusRowNumber);
             }
-            else if(i >=126 && i<=140){
+            else if(i >=126 && i<=140){ //creates elements for extra row 1
                 elementButtons[i] = new ImageButton(context);
                 elementButtons[i].setImageResource(getImage(context, elementName));
                 elementButtons[i].setBackgroundResource(0);
                 setButtonClick(i, elementButtons[i]);
 
             }
-            else if(i >=141 && i<=155){
+            else if(i >=141 && i<=155){ //creates extra row 2
                 elementButtons[i] = new ImageButton(context);
                 elementButtons[i].setImageResource(getImage(context, elementName));
                 elementButtons[i].setBackgroundResource(0);
@@ -87,8 +86,7 @@ public class createButtons extends Activity {
 
             }
             else {
-
-                elementButtons[i] = new ImageButton(context);
+                elementButtons[i] = new ImageButton(context); //creates blank spots
                 elementButtons[i].setImageResource(getImage(context, "blank"));
                 elementButtons[i].setBackgroundResource(0);
 
@@ -98,22 +96,22 @@ public class createButtons extends Activity {
         return elementButtons;
     }
 
-    public ImageButton getKey() {
+    public ImageButton getKey() { //creates the key popup
         ImageButton keyButton = new ImageButton(context);
         keyButton.setImageResource(getImage(context, "popup"));
         keyButton.setBackgroundResource(0);
         return keyButton;
     }
 
-    private static int getImage(Context context, String name) {
+    private static int getImage(Context context, String name) { //gets the images to display
         return context.getResources().getIdentifier(name, "drawable",
                 context.getPackageName());
     }
 
-    private void setExtraClick(ImageButton buttonToSet, final int rowNumber){
+    private void setExtraClick(ImageButton buttonToSet, final int rowNumber){ //creates onClick for
         buttonToSet.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view) {                            //extra rows
                 Intent bonusElement = new Intent(context, BonusElements.class);
                 bonusElement.putExtra("rowNum", rowNumber);
                 context.startActivity(bonusElement);
@@ -122,7 +120,7 @@ public class createButtons extends Activity {
         });
     }
 
-    private void setButtonClick(final int i, ImageButton buttonToSet) {
+    private void setButtonClick(final int i, ImageButton buttonToSet) { //creates normal onClick
         buttonToSet.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

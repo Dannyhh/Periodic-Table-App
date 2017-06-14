@@ -1,3 +1,8 @@
+/*
+ * Created by Danny Higgins on 3/16/2017.
+ * This class sets up the display for the bonus rows of elements
+ */
+
 package ros_dhhiggins.example.com.periodictable;
 
 import android.app.Activity;
@@ -11,22 +16,22 @@ import android.widget.TableRow;
 public class BonusElements extends AppCompatActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) { //onCreate method to build the screen
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bonus_elements);
         TableLayout table = (TableLayout) findViewById(R.id.SmallLayoutTable);
-        Intent recieved = getIntent();
-        int rowNum = recieved.getIntExtra("rowNum", 0);
+        Intent received = getIntent();
+        int rowNum = received.getIntExtra("rowNum", 0); //recieve int to know which row (from PeriodicTableScreen)
         buildScreen(BonusElements.this, table, rowNum);
 
     }
 
-    public void buildScreen(final Activity context, TableLayout table, int rowNum) {
+    public void buildScreen(final Activity context, TableLayout table, int rowNum) { //method that creates the screen
         createButtons newButtons = new createButtons(context);
         ImageButton[] imageButtons;
         imageButtons = newButtons.build();
 
-        if (rowNum == 1) {
+        if (rowNum == 1) { // if else loop to dictate which row will be displayed
             TableRow tempRow = new TableRow(this);
             for (int temp = 126; temp <= 140; temp++) {
                 ImageButton tempButton = imageButtons[temp];

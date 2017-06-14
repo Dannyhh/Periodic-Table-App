@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--Creates the information screen for the elements-->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_specific_element"
@@ -9,12 +11,16 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="ros_dhhiggins.example.com.periodictable.SpecificElement">
+
+    <!--Creates the text view with static info-->
     <TextView
         android:id="@+id/elementInfoDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/elementInfoOrder"
         android:textSize="25sp"/>
+
+    <!--Creates text view with dynamic info-->
     <TextView
         android:id="@+id/elementInfo"
         android:layout_width="wrap_content"
